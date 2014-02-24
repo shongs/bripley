@@ -1,0 +1,153 @@
+<!-- @include _header --> 
+
+  <div class="row">
+     
+    <div class="column3 pad-tb menuLateral">
+      <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+      <h2>Tarjetas de Cr&eacute;dito</h2>
+  <nav class="menu-contextual">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="sp2_01_00_tarjeta_de_credito_estadodecuenta.html">Estado de Cuenta</a></li>
+          <!-- <li><a href="sp2_01_00_tarjeta_de_credito_movimientos.html">Movimientos</a></li> -->
+          <li><a href="sp2_01_00_tarjeta_de_credito_saldos.html">Saldos</a></li>
+          <li><a href="sp2_01_00_tarjeta_de_credito_pagosycuentas.html">Pagos y Avances</a></li>
+          <li><a href="sp2_01_00_tarjeta_de_credito_solicitatarjeta.html">Solicita Tarjeta</a></li>
+          <li><a href="sp2_01_00_tarjeta_de_credito_tarjetaadicional.html">Tarjeta Adicional</a></li>
+          <li><a href="sp2_01_00_tarjeta_de_credito_tarjetavirtual.html">Tarjeta Virtual</a></li>
+        </ul> 
+        <div class="selectMenu selectBox">
+            <div class="box">Seleccion de Servicio o Seccion</div>
+        </div>
+    </nav>
+    
+    <div class="column12 last pad-all fullWidth contenedor">
+      
+        <ul class="submenu-contextual hide-on-phones">
+            <li><a href="sp2_01_00_tarjeta_de_credito_estadodecuenta_historico.html" title="Mis Facturaciones" rel="">Mis Facturaciones</a></li>
+            <li><a href="sp2_01_00_tarjeta_de_credito_movimientos_porfacturar.html" title="Movimientos por Facturar" rel="">Movimientos por Facturar</a></li>
+
+        </ul>
+     
+    <form>
+                  <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">1</span>
+                    </span>
+                    <p>Seleccione Tarjeta</p>
+                </div>
+                <div class="column12">
+                    <table class="table t-medium table-responsive">
+                        <thead>
+                            <tr>
+                                <th width="3%">
+                                </th>
+                                <th>
+                                    Tarjeta de Cr&eacute;dito
+                                </th>
+                     
+                                <th class="text-right">
+                                    Estado
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Tarjeta de Cr&eacute;dito</b>Mastercard 2341-535-XXXX</td>
+                            
+                            <td class="text-right"><b class="labelTable">Estado</b>Vigente</td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Tarjeta de Cr&eacute;dito</b>Visa 2431-546-XXXX</td>
+
+
+                            <td class="text-right"><b class="labelTable">Estado</b>Vigente</td>
+                        </tr>
+                        <tr>
+                    </table>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">2</span>
+                    </span>
+                    <p>Seleccione período que desea consultar</p>
+                </div>
+                <div class="column12 fullWidth">
+                    <table class="table t-medium table-responsive">
+                        <tr>
+                            <td width="3%"></td>
+                            <td>Mes / Año
+                            </td>
+                            <td>
+                              <label>Mes</label>
+                            </td>
+                            <td>
+                              
+                              <div class="selectBox">
+                                <div class="box">Seleccione Mes</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>Enero</option>
+                                        <option>Febrero</option>
+                                        <option>Marzo</option>
+                                        <option>Abril</option>
+                                        <option>Mayo</option>
+                                        <option>Junio</option>
+                                        <option>Julio</option>
+                                        <option>Agosto</option>
+                                        <option>Septiembre</option>
+                                        <option>Octubre</option>
+                                        <option>Noviembre</option>
+                                        <option>Diciembre</option>
+                                    </select>
+                              </div>
+                            </td>
+                            <td>
+                              <label>Año</label>
+                            </td>
+                            <td>
+                              
+                              <div class="selectBox">
+                                <div class="box">Seleccione Año</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                    </select>
+                              </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>                    
+                    <div class="f-right">
+                        <a class="btn btn-en" href="sp2_01_00_tarjeta_de_credito.html">Cancelar</a>
+                                <a class="btn btn-trans" href="javascript: void(0)" onclick="window.open('assets/pdf.pdf', 
+                                                                                                          'windowname2', 
+                                                                                                          'width=800, \
+                                                                                                           height=600, \
+                                                                                                           directories=no, \
+                                                                                                           location=no, \
+                                                                                                           menubar=no, \
+                                                                                                           resizable=no, \
+                                                                                                           scrollbars=1, \
+                                                                                                           status=no, \
+                                                                                                           toolbar=no'); 
+                                                                                                          return false;">Aceptar</a>
+                    </div>
+                </div>
+    </form> 
+
+      <div class="tabla-footer">
+
+      </div>
+
+    </div>
+    </section>
+
+    </div>
+  </div>
+  
+<!-- @include _footer -->

@@ -1,0 +1,150 @@
+<!-- @include _header -->
+
+  <div class="row">
+     
+    <div class="column3 pad-tb menuLateral">
+      <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+      <h2>Transferencias</h2> 
+  <nav class="menu-contextual">
+        <ul class="nav nav-tabs">
+          <li><a href="sp3_01_00_Transferencias_entre_mis_productos.html">Entre mis Productos</a></li>
+          <li><a href="sp3_01_00_Transferencias_a_terceros_transferir.html">A Terceros</a></li>
+          <li class="active"><a href="sp3_01_00_Transferencias_programadas.html">Programadas</a></li>
+          <li><a href"#">Cartola</a></li>
+         <!--  <li><a href="sp3_01_00_Transferencias_aportes.html">Aportes</a></li> -->
+        </ul> 
+        <div class="selectMenu selectBox">
+            <div class="box">Seleccion de Servicio o Seccion</div>
+        </div>
+    </nav>
+    
+    <div class="column12 last pad-all fullWidth contenedor">
+
+      <div class="flujo">
+        <div class="paso-flujo">
+
+              <span class="num-dark-flujo">
+                  <span class="round-flujo">1</span>
+              </span>
+              <p>Datos Agendamiento</p>
+
+        </div>
+        <div class="paso-flujo">
+              <span class="num-dark-flujo">
+                  <span class="round-flujo">2</span>
+              </span>
+              <p>Datos Transferencia</p>          
+        </div>
+        <div class="paso-flujo paso-flujo-active">
+              <span class="num-dark-flujo-active">
+                  <span class="round-flujo">3</span>
+              </span>
+              <p>Confirmaci&oacute;n Agendamiento</p>
+        </div>     
+
+     </div>             
+      <form>
+                <div class="column12">
+                    <table class="table t-medium table-responsive tabla-detalle-transaccion">
+                        <thead>
+
+                        </thead>
+                        <tr>
+                            <td>
+                                <table class="table table-nested">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">
+                                                Cuenta de Origen
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>Tipo de Cuenta</td>
+                                        <td>Cuenta Vista</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cuenta Nº:</td>
+                                        <td>0-000-01-435332-4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saldo</td>
+                                        <td>500.000</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="table table-nested">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">
+                                                Cuenta de Destino
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>Tipo de Cuenta</td>
+                                        <td>Cuenta Vista</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cuenta Nº:</td>
+                                        <td>0-000-01-435332-4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saldo</td>
+                                        <td>500.000</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    <table class="table">
+                      <tr>
+                        <td>Frecuencia Programada:</td>
+                        <td>S&oacute;lo una vez</td>
+                        <td>Fecha a transferir: </td>
+                        <td>S&oacute;lo el d&iacute;a 21-02-2014</td>
+                      </tr>
+                      <tr>
+                        <td>Monto Programado</td>
+                        <td>$100.000</td>
+                      </tr>
+                    </table>
+                </div>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">4</span>
+                    </span>
+                    <p>Confirmar Transferencia</p>
+                </div>
+                <div class="column12 fullWidth">
+                    <table class="table t-medium">
+                        <tr>
+                            <td width="3%"></td>
+                            <td width="25%"><label>Ingrese su clave Internet:</label></td>
+                            <td>
+                                <div class="input-group">
+                                    <input class="form-control" type="password"/>
+                                </div>
+                            </td>
+                        </tr>
+                            
+                    </table>
+                    <div class="f-right">
+                        <a class="btn btn-en" href="sp3_01_00_Transferencias_programadas.html">Cancelar</a>
+                        <a class="btn btn-se" href="sp3_01_00_Transferencias_programadas_entremisproductos_paso2.html">Volver</a>
+                        <a class="btn btn-trans" href="sp3_01_00_Transferencias_programadas_entremisproductos_paso4.html">Aceptar</a>
+                    </div>
+                </div>
+            </form>
+      
+      
+    </section>
+
+    </div>
+  </div>
+  
+<!-- @include _footer -->

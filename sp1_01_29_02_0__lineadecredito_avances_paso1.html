@@ -1,0 +1,122 @@
+<!-- @include _header -->
+
+<div class="row">
+
+    <div class="column3 pad-tb menuLateral">
+        <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+        <h2>Línea de Crédito</h2>
+        <nav class="menu-contextual">
+        <ul class="nav nav-tabs">
+          <li><a href="sp1_01_29_01__lineadecredito_ult_movimientos.html">Últimos Movimientos</a></li>
+            <li><a href="sp1_01_29_03_0__lineadecredito_saldos.html">Saldos</a></li>
+            <li><a href="sp1_01_29_02_0__lineadecredito_pagos_paso1.html">Pagos</a></li>
+            <li class="active"><a href="sp1_01_29_02_0__lineadecredito_avances_paso1.html">Avances</a></li>
+            <li><a href="sp1_01_29_01__lineadecredito_cartola.html">Cartolas</a></li>
+        </ul> 
+            <div class="selectMenu selectBox">
+                <div class="box">Seleccion de Servicio o Seccion</div>
+            </div>
+        </nav>
+
+        <div class="column12 last pad-all fullWidth contenedor">
+
+<!--         <ul class="submenu-contextual hide-on-phones">
+            <li><a href="sp1_01_29_01_cuenta_vista_ult_movimientos.html" title="Ultimos movimientos" rel="">Últimos Movimientos</a></li>
+            <li><a href="sp1_01_29_02_0_cuenta_vista_transferencias.html" title="Transferencias" rel="">Transferencias</a></li>
+            <li><a href="sp1_01_29_03_cuenta_vista_saldos.html" title="Saldos" rel="">Saldos</a></li>
+            <li><a href="sp1_01_29_04_cuenta_vista_cartola_anterior.html" title="Cartola Anterior" rel="">Cartola Anterior</a></li>
+        </ul> -->
+            <form>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">1</span>
+                    </span>
+                    <p>Seleccione Línea de Crédito de la cual desea obtener el avance</p>
+                </div>
+                <div class="column12">
+                    <table class="table t-medium table-responsive">
+                        <thead>
+                            <tr>
+                                <th width="3%">
+                                </th>
+                                <th>
+                                    Número de Línea
+                                </th>
+                                <th class="text-right">Tasa Mensual %</th>
+
+                                <th class="text-right">
+                                    Cupo Disponible ($)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Cuenta(s)</b>Línea de Crédito 0-000-01-010101-2</td>
+                            <td class="text-right"><b class="labelTable"> Tasa Mensual %</b>4,49</td>
+                            <td class="text-right"><b class="labelTable"> Cupo Disponible ($)</b>400.000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">2</span>
+                    </span>
+                    <p>Seleccione Cuenta de Destino</p>
+                </div>
+                <div class="column12 fullWidth">
+                    <table class="table t-medium">
+                        <thead>
+                            <tr>
+                                <th width="3%">
+                                </th>
+                                <th>
+                                    Número de Cuenta
+                                </th>
+                                <th class="text-right">
+                                    Saldo Disponible ($)
+                                </th>
+                            </tr>
+                            </thead>
+                             <tr>
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Cuenta(s)</b>Cuenta Corriente 0-000-32-5739-9</td>
+                            <td class="text-right"><b class="labelTable"> Saldo Disponible($)</b>100.000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">3</span>
+                    </span>
+                    <p>Indique monto de Avance</p>
+                </div>
+                <div class="column12 fullWidth">
+                    <table class="table t-medium">
+                        <tr>
+                            <td width="3%"></td>
+                            <td width="25%"><label>Ingrese Monto($):</label></td>
+                            <td>
+                                <div class="input-group">
+                                    <input class="form-control" type="text"/>
+                                </div>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td colspan="4" class="text-right">
+                                    <a class="btn btn-en" href="sp1_01_29_01__lineadecredito.html">Cancelar</a>
+                                    <a class="btn btn-trans" href="sp1_01_29_02_0__lineadecredito_avances_paso2.html">Aceptar</a>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+</div>
+</div>
+
+<!-- @include _footer -->

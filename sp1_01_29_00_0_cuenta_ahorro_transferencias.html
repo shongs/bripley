@@ -1,0 +1,132 @@
+<!-- @include _header -->
+
+<div class="row">
+
+    <div class="column3 pad-tb menuLateral">
+        <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+        <h2>Cuentas</h2>
+        <nav class="menu-contextual">
+            <ul class="nav nav-tabs">
+                <li><a href="sp1_01_29_00_cuenta_corriente.html">Cuenta Corriente</a></li>
+                <li><a href="sp1_01_29_00_cuenta_vista.html">Cuenta Vista</a></li>
+                <li class="active"><a href="sp1_01_29_00_cuenta_ahorro.html">Cuenta de Ahorro</a></li>
+            </ul>
+            <div class="selectMenu selectBox">
+                <div class="box">Seleccion de Servicio o Seccion</div>
+            </div>
+        </nav>
+
+        <div class="column12 last pad-all fullWidth contenedor">
+
+        <ul class="submenu-contextual hide-on-phones">
+          <li><a href="sp1_01_29_00_cuenta_ahorro_ult_movimientos.html" title="Ultimos movimientos" rel="">Últimos Movimientos</a></li>
+          <!-- <li class="current"><a href="sp1_01_29_00_0_cuenta_ahorro_transferencias.html" title="Transferencias" rel="">Transferencias</a></li> -->
+          <li><a href="sp1_01_29_03_cuenta_ahorro_saldos.html" title="Saldos" rel="">Saldos a la Fecha</a></li>
+          <li><a href="sp1_01_29_00_cuenta_ahorro_certificados.html" title="Cartola Anterior" rel="">Certificados</a></li>
+        </ul>    
+            <form>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">1</span>
+                    </span>
+                    <p>Seleccion la cuenta de Origen</p>
+                </div>
+                <div class="column12">
+                    <table class="table t-medium table-responsive">
+                        <thead>
+                            <tr>
+                                <th width="3%">
+                                </th>
+                                <th>
+                                    Cuenta(s)
+                                </th>
+                                <th class="text-right">
+                                    Deuda Utilizada($)
+                                </th>
+                                <th class="text-right">
+                                    Saldo Disponible($)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Cuenta(s)</b>Cuenta Corriente 0-000-00-00000-00</td>
+                            <td class="text-right"><b class="labelTable">Deuda Utilizada($)</b>---</td>
+                            <td class="text-right"><b class="labelTable">Saldo Línea de Credito($)</b>9.999.999</td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Cuenta(s)</b>Cuenta Corriente 0-789-90-00900-90</td>
+                            <td class="text-right"><b class="labelTable">Deuda Utilizada($)</b>---</td>
+                            <td class="text-right"><b class="labelTable">Saldo Línea de Credito($)</b>9.999.999</td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Cuenta(s)</b>Linea de Credito 0-023-23-87598-07</td>
+                            <td class="text-right"><b class="labelTable">Deuda Utilizada($)</b>---</td>
+                            <td class="text-right"><b class="labelTable">Saldo Línea de Credito($)</b>9.999.999</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">2</span>
+                    </span>
+                    <p>Seleccion Cuenta de Destino</p>
+                </div>
+                <div class="column12 fullWidth">
+                    <table class="table t-medium">
+                        <tr>
+                            <td width="3%"></td>
+                            <td width="25%"><label>Cuentas</label></td>
+                            <td>
+                                <div class="selectBox ">
+                                    <div class="box">-----</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>Cuenta Ahorro 0-000-00-00000-00</option>
+                                        <option>Cuenta Ahorro 0-000-00-00000-00</option>
+                                        <option>Cuenta Ahorro 0-000-00-00000-00</option>
+                                        <option>Cuenta Ahorro 0-000-00-00000-00</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">3</span>
+                    </span>
+                    <p>Monto de la Transferencia</p>
+                </div>
+                <div class="column12 fullWidth">
+                    <table class="table t-medium">
+                        <tr>
+                            <td width="3%"></td>
+                            <td width="25%"><label>Ingrese Monto($):</label></td>
+                            <td>
+                                <div class="input-group">
+                                    <input class="form-control" type="text"/>
+                                </div>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td colspan="4" class="text-right">
+                                    <a class="btn btn-en" href="sp1_01_29_00_0_cuenta_ahorro.html">Cancelar</a>
+                                    <a class="btn btn-se" href="sp1_01_29_00_0_cuenta_ahorro.html">Volver</a>
+                                    <a class="btn btn-trans" href="sp1_01_29_00_0_cuenta_ahorro_transferencias_paso2.html">Aceptar</a>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+</div>
+</div>
+
+<!-- @include _footer

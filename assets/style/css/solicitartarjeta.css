@@ -1,0 +1,289 @@
+.sect-solicitartarjeta{
+	float: left;
+	width: 100%;
+	margin: 20px auto;
+}
+.img-tarjeta{}
+.img-tarjeta img{
+	width: 20%;
+	float: left;
+	margin-right: 5px;
+}
+.informacion-tarjeta{
+	float: left;
+	width: 58%;
+	font-size: 12px;
+	margin: 5px;
+}
+.informacion-tarjeta h3{
+	color: #662869;
+	background-color: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+.informacion-tarjeta p{
+	font-size: 12px;
+}
+.btn-solicitartarjeta{
+	float: left;
+	margin: 25px 10px auto;
+}
+.contacto-solicitar-tarjeta{
+	width: 78%;
+	border: 1px solid #f5f5f5;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.contacto-solicitar-tarjeta p{
+	float: left;
+	margin: 15px 5px;
+	font-size: 12px;
+}
+.contacto-solicitar-tarjeta-telefono{
+	background-color: #f5f5f5;
+	float: right;
+	padding: 0px 20px;
+}
+.contacto-solicitar-tarjeta-telefono p{
+	margin: 0px;
+	padding: 15px 4px;
+}
+.contacto-solicitar-tarjeta-telefono img{
+	margin: 0px;
+	padding: 0px;
+}
+.contacto-solicitar-tarjeta img{
+	margin-top: -5px}	
+.fono-asistencia{
+	float: left;
+	margin-top: -10px;
+}
+.fono-bold{
+	font-weight: bold;
+	font-size: 16px;
+	margin: 0px;
+}
+.tcredito-info{
+}
+.tcredito-tabs ul{
+	padding: 0px;
+	margin: 0px;
+}
+.tcredito-tabs ul li{
+	list-style: disc;
+	margin: 0px 30px;
+	font-size: 12px;
+	padding: 10px;
+}
+.form-solicitudtarjeta{
+	width: 80%;
+	margin: 10%;
+	text-align: center;
+	border: 1px solid #666666;	
+}
+/*=============== Mensaje de Éxito ===================*/
+.exito{
+	margin-top: 5%;
+	text-align: center;
+	color: 666;
+	width: 100%;
+}
+.exito-img{
+	margin: 10px auto;
+}
+.exito-title{
+	font-size: 14px;
+	color: #333;
+} 
+.exito-cliente{
+	font-weight: bold;
+	font-size: 14px;	
+}
+.exito-mensaje{
+	font-size: 12px;
+	color: #989898;
+}
+.exito-volverinicio{
+	font-size: 12px;
+	text-decoration: underline;
+}
+/*=============== Espacio Campaña ===================*/
+.ad{
+	margin: 10px;
+	width: 100%;
+	height: 100%;
+	min-height: 350px;
+	color: #fff;
+	font-size: 40px;
+	background-color: #9e9e9e;
+	float: left;
+	padding-top: 15%;
+	text-align: center;
+}
+.ad p{
+	font-size: 40px;
+}
+/*================ FLUJOS =======================*/
+.flujo{
+  width: 100%;
+  float: left;
+  background-color: #eaeaea;
+  margin-bottom: 10px;
+}
+.paso-flujo-active{
+  color: #fff;
+  float: left;
+  width: 33.3%;
+  background-color: #662869;   
+
+}
+.paso-flujo{
+  float: left;
+  width: 33.3%;
+  border-right: 1px solid #ffffff;
+}
+.paso-flujo p{
+  float: left;
+  padding-top: 3px;
+}
+.round-flujo{
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 100%;
+  color: #662869;
+  display: block;
+  height: 20px;
+  text-align: center;
+  width: 20px;
+}
+.num-dark-flujo {
+  height: 40px;
+  background: #eaeaea;
+  display: block;
+  float: left;
+  padding: 5px;
+  margin-right: 10px;
+}
+.num-dark-flujo-active {
+  height: 40px;
+  background: #4c1e50;
+  display: block;
+  float: left;
+  padding: 5px;
+  margin-right: 10px;
+}
+/*=============== Aportes ===================*/
+.aportes{
+	float: left;
+	margin: 1%;
+	border: 1px solid #ddd;
+	padding: 1%;
+	width: 23%;
+}
+.logo-institucion{
+	width: 100%;
+	max-width: 270px;
+	height: 120px;
+	float: left;
+	margin-bottom: 2px;
+}
+.logo-institucion img{
+	width: 100%;
+	height: auto;
+	max-height: 128px;
+	float: left;
+}
+.btn_aporte{
+	width: 100%;
+	margin: 2px auto;
+}
+
+
+
+.aportes-botones{
+
+}
+
+
+.border-right{
+	border-right: 5px solid #662869;
+}
+
+
+/* ========== SEGUROS ================= */
+.seguro{
+	float: left;
+	width: 45%;
+	height: auto;
+	background-color: #f0f0f0;
+	margin: 10px auto;
+}
+.icon-cat-seguro{
+	float: left;
+	width: 105px;
+	height: auto;
+	background-color: #662869;
+}
+.icon-cat-seguro p{
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+}
+.lista-seguros{
+	float: left;
+}
+.lista-seguros ul{
+	list-style: none;
+}
+.lista-seguros ul li{
+	border-left: 5px solid #662869;
+	margin: 5%;
+	padding-left: 5px;
+}
+.lista-seguros ul li a{
+	text-decoration: none;
+}
+.lista-seguros ul li a:hover{
+	text-decoration: underline;
+}
+.seguro-detalle{
+	width: 100%;
+	background-color: #f0f0f0;	
+	float: left;
+}
+.icon-seguro-s{
+	float: left;
+	max-height: 50px;
+	width: 25%;
+}
+.icon-seguro-s img{
+	float: left;
+	max-height: 50px;
+}
+
+.tit-seguro{
+	float: left;
+	background-color: #f0f0f0;
+	width: 50%;
+	padding: 2%;
+	font-size: 20px;
+}
+.seguro-precio{
+	color: #fff;
+	padding: 2%;
+	background-color: #662869;
+	float: left;
+	width: 25%;
+	height: auto;
+}
+.fontsize20{
+	font-size: 20px;
+	margin: auto 5px;
+}
+.textomorado{
+	color: #662869;	
+}
+
+
+
+

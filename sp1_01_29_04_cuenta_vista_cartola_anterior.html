@@ -1,0 +1,178 @@
+ <!-- @include _header -->
+
+  <div class="row">
+     
+    <div class="column3 pad-tb menuLateral">
+      <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+      <h2>Cuentas</h2>
+    <nav class="menu-contextual">
+        <ul class="nav nav-tabs">
+          <li><a href="sp1_01_29_00_cuenta_corriente.html">Cuenta Corriente</a></li>
+          <li class="active"><a href="sp1_01_29_00_cuenta_vista.html">Cuenta Vista</a></li>
+          <li><a href="sp1_01_29_00_cuenta_ahorro.html">Cuenta de Ahorro</a></li>
+        </ul>
+        <div class="selectMenu selectBox">
+            <div class="box">Seleccion de Servicio o Seccion</div>
+        </div>
+    </nav>
+    
+    <div class="column12 last pad-all fullWidth contenedor">
+      
+        <ul class="submenu-contextual hide-on-phones">
+          <li><a href="sp1_01_29_01_cuenta_vista_ult_movimientos.html" title="Ultimos movimientos" rel="">Últimos Movimientos</a></li>
+          <li><a href="sp1_01_29_02_0_cuenta_vista_transferencias.html" title="Transferencias" rel="">Transferencias</a></li>
+          <li><a href="sp1_01_29_03_cuenta_vista_saldos_seleccion.html" title="Saldos" rel="">Saldos a la Fecha</a></li>
+          <li class="current"><a href="sp1_01_29_04_cuenta_vista_cartola_anterior.html" title="Cartola Anterior" rel="">Cartolas</a></li>
+
+        </ul>
+      
+        <table class="table tabla-detalle-cliente">
+          <thead>
+            <th class="fullWidth border-right">
+              AUGUSTO ROBERTO BASTIDAS COLLAO
+            </th>
+         
+          </thead>
+          <tr>
+          
+            <td>
+              <table class="t-small f-right">
+                <tr>
+                  <td class="pad-left">
+                      Fecha 02/01/2014
+                  </td>
+                  <td class="pad-left">
+                    Hora 20:42
+                  </td>
+                </tr>
+              </table>
+            </td>  
+          </tr>
+        </table>
+      
+            <form>
+                <div class="column12">
+                   <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">1</span>
+                    </span>
+                    <p>Seleccione cuenta</p>
+                </div>
+                    <table class="table t-medium table-responsive">
+                        <tr>
+                            <td><input type="radio" name="cuenta"><b class="labelTable">Cuenta(s)</b><label>Cuenta Vista 0-000-00-00000-00</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="cuenta"><b class="labelTable">Cuenta(s)</b><label>Cuenta Vista 0-000-00-00000-00</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="cuenta"><b class="labelTable">Cuenta(s)</b><label>Cuenta Vista 0-000-00-00000-00</label></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">2
+                      </span>
+                    </span>
+                    <p>Seleccione y defina el período que desea consultar</p>
+                </div>
+                <div class="column12 fullWidth">
+                    <table class="table t-medium table-responsive">
+                        <tr>
+                            <td width="3%"></td>
+                            <td><input type="radio" name="tramo-fecha"><label>Mes / Año</label>
+                            </td>
+                            <td>
+                            	<label>Mes</label>
+                            </td>
+                            <td>
+                              
+                              <div class="selectBox">
+                                <div class="box">Seleccione Mes</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>Enero</option>
+                                        <option>Febrero</option>
+                                        <option>Marzo</option>
+                                        <option>Abril</option>
+                                        <option>Mayo</option>
+                                        <option>Junio</option>
+                                        <option>Julio</option>
+                                        <option>Agosto</option>
+                                        <option>Septiembre</option>
+                                        <option>Octubre</option>
+                                        <option>Noviembre</option>
+                                        <option>Diciembre</option>
+                                    </select>
+                              </div>
+                            </td>
+                            <td>
+                            	<label>Año</label>
+                            </td>
+                            <td>
+                              
+                              <div class="selectBox">
+                                <div class="box">Seleccione Año</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                    </select>
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="3%"></td>
+                            <td><input type="radio" name="tramo-fecha"><b class="labelTable">Cuenta(s)</b><label>Consulta entre fechas</label></td>
+                            <td>
+                                Desde
+                            </td>
+                            <td> 
+                              <div class="selectBox">
+                                <div class="box">Seleccione Año</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                    </select>
+                              </div>
+
+                            </td>
+                            <td>
+                                Hasta
+                            </td>
+                            <td> 
+                              <div class="selectBox">
+                                <div class="box">Seleccione Año</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                    </select>
+                              </div>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="f-right">
+                  <a class="btn btn-en" href="sp1_01_29_00_cuenta_vista.html">Cancelar</a>
+                  <a class="btn btn-trans" href="sp1_01_29_04_cuenta_vista_cartola_anterior_despliegue.html">Aceptar</a>   
+                </div> 
+            </form>
+      
+    </div>
+    </section>
+
+    </div>
+  </div>
+  
+<!-- @include _footer -->

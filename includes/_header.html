@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="all" href="<!-- @path /style/css/reset.css -->" />
+        <link rel="stylesheet" type="text/css" media="all" href="<!-- @path /style/css/grid.css -->" />
+        <link rel="stylesheet" type="text/css" media="all" href="<!-- @path /style/css/components.css -->" />
+        <link rel="stylesheet" type="text/css" media="all" href="<!-- @path /style/css/header.css -->" />
+        <link rel="stylesheet" type="text/css" media="all" href="<!-- @path /style/css/bootstrap.css -->" />
+        <link rel="stylesheet" type="text/css" media="all" href="<!-- @path /style/css/style.css -->" />
+        <link rel="stylesheet" type="text/css" media="all" href="<!-- @path /style/css/icons.css -->" />
+        <link rel="stylesheet" type="text/css" media="all" href="<!-- @path /style/css/adapt.css -->" />
+        <link rel="stylesheet" type="text/css" media="all" href="<!-- @path /style/css/claro/claro.css -->" />
+        <link rel="stylesheet" type="text/css" media="all" href="<!-- @path /style/css/solicitartarjeta.css -->" />
+        <link rel="stylesheet" type="text/css" media="all" href="<!-- @path /style/css/dojo.css -->" />
+        
+          <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.9.2/dojo/dojo.js"
+            data-dojo-config="async: true"></script>
+        <script src="<!-- @path assets/js/function-dojo.js -->"></script>
+
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+        <script src="<!-- @path assets/js/bootstrap.min.js -->"></script>
+        <script src="<!-- @path assets/js/collapse.js -->"></script>
+        <script src="<!-- @path assets/js/transition.js -->"></script>
+        <script src="<!-- @path assets/js/script.js -->"></script>
+
+        <link rel="stylesheet" href="<!-- @path /style/css/table.css -->">
+
+        <!--[if lt IE 9]>
+                <script src="assets/js/html5shiv.js"></script>
+        <![endif]-->
+        <title> Banco Ripley</title>
+    </head>
+    <body>
+
+        <!-- @include _modal_facturado -->
+        <div class="modal fade bs-modal-lg facturacion" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Vista Documento</h4>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img src="assets/img/cheque.jpg"/>
+                        </figure>
+                        <table class="table margin-tb">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        Detalle del Documento
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>
+                                    Numero de Cuenta
+                                </td>
+                                <td>
+                                     0-000-00-00000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tipo de Documento
+                                </td> 
+                                <td>
+                                    Cheque
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    Monto
+                                </td>
+                                <td>
+                                    226.922
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    Numero de Serie
+                                </td>
+                                <td>
+                                    000000089
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    Fecha Deposito o Cobro
+                                </td>
+                                <td>
+                                    23-01-2014
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-en" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-trans">Imprimir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-offcanvas row-offcanvas-left">
+            <header id="corporativo" class="main-head">
+                <!-- @include _menu-top -->
+                <div class="row">
+                    <a class="logo" href="index.html" title="ir a Banco Ripley" rel="index"><img alt="Logo Banco Ripley" src="assets/img/logo.png"/></a>
+                    <section class="column6 last info-cliente">
+                        <p class="color-p">Bienvenido Augusto Roberto Bastidas Collao</p>
+                        <p class="t-small">Último acceso 02/08/2013 a 12:50:06</p>
+                        <ul class="accesos-cuenta">
+                            <li><a href="#"><i class="x-small ico-puntos"></i>Ripley Puntos: 2.543</a></li>
+                            <li><a href="#"><i class="x-small ico-perfil"></i>Mi perfil</a></li>
+                            <li><a href="#"><i class="x-small ico-close"></i>Cerrar Sesion </a></li>
+                        </ul>
+                    </section>
+                    <!-- @include _menu-aux -->
+                </div>
+            </header>

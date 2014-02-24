@@ -1,0 +1,148 @@
+<!-- @include _header -->
+
+  <div class="row">
+     
+    <div class="column3 pad-tb menuLateral">
+      <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+      <h2>Recargas</h2> 
+  
+    
+    <div class="column12 last pad-all fullWidth contenedor">
+       
+      <div class="flujo">
+        <div class="paso-flujo">
+
+              <span class="num-dark-flujo">
+                  <span class="round-flujo">1</span>
+              </span>
+              <p>Complete Datos</p>
+
+        </div>
+        <div class="paso-flujo paso-flujo-active">
+              <span class="num-dark-flujo-active">
+                  <span class="round-flujo">2</span>
+              </span>
+              <p>Seleccione Cuenta</p>          
+        </div>
+        <div class="paso-flujo">
+              <span class="num-dark-flujo">
+                  <span class="round-flujo">3</span>
+              </span>
+              <p>Comprobante de Recarga</p>
+        </div>
+
+      </div>   
+
+
+           
+      
+
+<div class="column12 margin-tb">
+  <form>  
+
+      <div class="paso sin-numero">
+        <p>Seleccione Cuenta:</p>
+      </div>
+      <div class="column12">
+      <table class="table table-responsive">
+        <thead>
+          <tr>
+            <th width="3%">
+            </th>
+            <th>
+              Cuenta
+            </th>
+            <th class="text-right">
+              Saldo($)
+            </th>
+            <th class="text-right">
+              Saldo Línea de Crédito($)
+            </th>
+            <th class="text-right">
+              Saldo Disponible Total($)
+            </th>
+          </tr>
+        </thead>
+        <tr class="opcion-tabla">
+          <td>
+            <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="coffee"/> 
+          </td>
+          <td>
+            <label>Cuenta Corriente 0-00-000-0000</label>
+          </td>
+          <td class="text-right">
+            800.000
+          </td>
+          <td class="text-right">
+            500.000
+          </td>
+          <td class="text-right">
+            1.300.000
+          </td>
+        </tr>
+        <tr class="opcion-tabla">
+          <td>
+            <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta" value="coffee"/> 
+          </td>
+          <td>
+            <label>Cuenta Corriente 0-00-000-0000</label>
+          </td>
+          <td class="text-right">
+            800.000
+          </td>
+          <td  class="text-right">
+            500.000
+          </td>
+          <td class="text-right">
+            1.300.000
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="paso sin-numero">
+        <p>Confirmación de Recarga</p>
+      </div>
+      <div class="column12">
+                    <table class="table t-medium table-responsive">
+                        <tr>
+                            <td width="50%">Aseg&uacute;rese que el n&uacute;mero de seria de su Tarjeta Ripley es 15934393. Si es as&iacute;, ingrese el valor de las siguientes coordenadas</td>
+                            <td>
+                            <td>
+                              <div class="cords">
+                                      <label>
+                                        A3
+                                      <input class="form-control" type="password" maxlength="2"/>
+                                    </label>
+                                    <label>
+                                        B4
+                                       <input class="form-control" type="password" maxlength="2"/>
+                                     </label>
+                                     <label>
+                                      D1
+                                       <input class="form-control" type="password" maxlength="2"/
+                                      </label>
+                                    </div>
+                            </td>
+                        </tr>    
+                    </table>
+
+                </div>
+                <div class="f-right">
+
+              <a class="btn btn-en" href="sp3_01_00_Recargas.html">Cancelar</a>
+            <a class="btn btn-trans" href="sp3_01_00_Recargas_paso4.html">Aceptar</a>
+          
+      </div>
+
+
+  </form>
+      
+      
+  </section>
+
+    </div>
+  </div>
+  
+<!-- @include _footer -->

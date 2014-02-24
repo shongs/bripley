@@ -1,0 +1,162 @@
+<!-- @include _header -->
+
+  <div class="row">
+     
+    <div class="column3 pad-tb menuLateral">
+      <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+      <h2>Cuentas</h2>
+    <nav class="menu-contextual">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="sp1_01_29_00_cuenta_corriente.html">Cuenta Corriente</a></li>
+          <li><a href="sp1_01_29_00_cuenta_vista.html">Cuenta Vista</a></li>
+          <li><a href="#;">Cuenta de Ahorro</a></li>
+        </ul>
+        <div class="selectMenu selectBox">
+            <div class="box">Seleccion de Servicio o Seccion</div>
+        </div>
+    </nav>
+    
+    <div class="column12 last pad-all fullWidth contenedor">
+      
+        <ul class="submenu-contextual hide-on-phones">
+          <li><a href="sp1_01_29_00_01_cuenta_corriente_ult_movimientos.html" title="Ultimos movimientos" rel="">Últimos Movimientos</a></li>
+          <li><a href="sp1_01_29_00_0_cuenta_corriente_transferencias.html" title="Transferencias" rel="">Transferencias</a></li>
+          <li><a href="sp1_01_29_00_0_cuenta_corriente_saldos_seleccion.html" title="Saldos y Cheques" rel="">Saldos y Cheques</a></li>
+          <li class="current"><a href="sp1_01_29_00_0_cuenta_corriente_cartola_historica.html" title="Cartola Históricas" rel="">Cartolas</a></li>
+          <li><a href="sp1_01_29_00_0_cuenta_corriente_consulta_ordenes_no_pago.html" title="Consultas órdenes no pago" rel="">Consultas órdenes no pago</a></li>
+
+        </ul>
+      
+        <table class="table tabla-detalle-cliente">
+          <thead>
+            <th class="fullWidth border-right">
+              AUGUSTO ROBERTO BASTIDAS COLLAO
+            </th>
+         
+          </thead>
+          <tr>
+         
+            <td>
+              <table class="t-small f-right">
+                <tr>
+                  <td class="pad-left">
+                      Fecha 02/08/2013
+                  </td>
+                  <td class="pad-left">
+                    Hora 9:29
+                  </td>
+                </tr>
+              </table>
+            </td>  
+          </tr>
+        </table>
+      
+            <form>
+                <div class="column12">
+                   <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">1</span>
+                    </span>
+                    <p>Seleccione cuenta</p>
+                </div>
+                    <table class="table t-medium table-responsive">
+                        <tr>
+                            <td><input type="radio" name="cuenta"><b class="labelTable">Cuenta(s)</b><label>Cuenta Corriente 0-000-00-00000-00</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="cuenta"><b class="labelTable">Cuenta(s)</b><label>Cuenta Corriente 0-000-00-00000-00</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="cuenta"><b class="labelTable">Cuenta(s)</b><label>Cuenta Corriente 0-000-00-00000-00</label></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">2</span>
+                    </span>
+                    <p>Seleccione y defina el período que desea consultar</p>
+                </div>
+                <div class="column12 fullWidth">
+                    <table class="table t-medium table-responsive">
+                        <tr>
+                            <td width="3%"></td>
+                            <td><input type="radio" name="tramo-fecha"><label>Mes / Año</label>
+                            </td>
+                            <td>
+                              <label>Mes</label>
+                            </td>
+                            <td>
+                              
+                              <div class="selectBox">
+                                <div class="box">Seleccione Mes</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>Enero</option>
+                                        <option>Febrero</option>
+                                        <option>Marzo</option>
+                                        <option>Abril</option>
+                                        <option>Mayo</option>
+                                        <option>Junio</option>
+                                        <option>Julio</option>
+                                        <option>Agosto</option>
+                                        <option>Septiembre</option>
+                                        <option>Octubre</option>
+                                        <option>Noviembre</option>
+                                        <option>Diciembre</option>
+                                    </select>
+                              </div>
+                            </td>
+                            <td>
+                              <label>Año</label>
+                            </td>
+                            <td>
+                              
+                              <div class="selectBox">
+                                <div class="box">Seleccione Año</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                    </select>
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="3%"></td>
+                            <td><input type="radio" name="tramo-fecha"><b class="labelTable">Cuenta(s)</b><label>Consulta entre fechas</label></td>
+                            <td>
+                                Desde
+                            </td>
+                            <td> 
+                                <script type="dojo/method" data-dojo-event="onChange" data-dojo-args="value">
+                                    require(["dojo/parser", "dijit/form/DateTextBox"]);
+                                </script>
+                                <input data-dojo-id="myFromDate" type="text" name="fromDate" data-dojo-type="dijit/form/DateTextBox"
+                                onChange="myToDate.constraints.min = arguments[0];" />
+                            <td>
+                                Hasta
+                            </td>
+                            <td> 
+                              <input data-dojo-id="myToDate" type="text" name="toDate" data-dojo-type="dijit/form/DateTextBox"
+                              onChange="myFromDate.constraints.max = arguments[0];" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="f-right">
+                  <a class="btn btn-en" href="sp1_01_29_00_cuenta_corriente.html">Cancelar</a>
+                  <a class="btn btn-trans" href="sp1_01_29_00_0_cuenta_corriente_cartola_historica_despliegue.html">Aceptar</a>   
+                </div> 
+            </form>
+    </div>
+    </section>
+
+    </div>
+  </div>
+  
+<!-- @include _footer -->

@@ -1,0 +1,111 @@
+<!-- @include _header -->
+
+  <div class="row">
+     
+    <div class="column3 pad-tb menuLateral">
+      <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+      <h2>Tarjetas de Cr&eacute;dito</h2> 
+  <nav class="menu-contextual">
+        <ul class="nav nav-tabs">
+          <li><a href="sp2_01_00_tarjeta_de_credito_estadodecuenta.html">Estado de Cuenta</a></li>
+          <!-- <li class="active"><a href="sp2_01_00_tarjeta_de_credito_movimientos.html">Movimientos</a></li> -->
+          <li><a href="sp2_01_00_tarjeta_de_credito_saldos.html">Saldos</a></li>
+          <li><a href="sp2_01_00_tarjeta_de_credito_pagosycuentas.html">Pagos y Avances</a></li>
+          <li><a href="sp2_01_00_tarjeta_de_credito_solicitatarjeta.html">Solicita Tarjeta</a></li>
+          <li><a href="sp2_01_00_tarjeta_de_credito_tarjetaadicional.html">Tarjeta Adicional</a></li>
+          <li><a href="sp2_01_00_tarjeta_de_credito_tarjetavirtual.html">Tarjeta Virtual</a></li>
+        </ul> 
+        <div class="selectMenu selectBox">
+            <div class="box">Seleccion de Servicio o Seccion</div>
+        </div>
+    </nav>
+    
+    <div class="column12 last pad-all fullWidth contenedor">
+        <ul class="submenu-contextual hide-on-phones">
+            <li><a href="sp2_01_00_tarjeta_de_credito_movimientos_facturados.html" title="Tarjeta de Credito" rel="">Facturados</a></li>
+            <li><a href="sp2_01_00_tarjeta_de_credito_movimientos_porfacturar.html" title="Tarjeta de Credito" rel="">Por Facturar</a></li>
+        </ul>
+      
+ <form>
+                      <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">1</span>
+                    </span>
+                    <p>Por favor, seleccione la cuenta con la que desea operar</p>
+                </div>
+                <div class="column12">
+                    <table class="table t-medium table-responsive">
+                        <thead>
+                            <tr>
+                                <th width="3%">
+                                </th>
+                                <th>
+                                    Tarjeta de Cr&eacute;dito
+                                </th>
+                                <th class="text-right">
+                                    Tipo de Movimiento
+                                </th>
+                                <th class="text-right">
+                                    Observaciones
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Tarjeta de Cr&eacute;dito</b>Mastercard 2341-535-XXXX</td>
+                            <td>
+                                <div class="selectBox ">
+                                    <b class="labelTable">Tipo de Movimiento</b>
+                                    <div class="box">-----</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>Nacional</option>
+                                        <option>Internacional</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="text-right"><b class="labelTable">Observaciones</b>Sin Observaciones</td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Tarjeta de Cr&eacute;dito</b>Visa 2431-546-XXXX</td>
+                            <td>
+                                <div class="selectBox ">
+                                    <b class="labelTable">Tipo de Movimiento</b>
+                                    <div class="box">-----</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>Nacional</option>
+                                        <option>Internacional</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="text-right"><b class="labelTable">Observaciones</b>Sin Observaciones</td>
+                        </tr>
+                        <tr>
+
+                        <tr>
+                            <td colspan="4" class="text-right">
+                                <a class="btn btn-se" href="sp2_01_00_tarjeta_de_credito_movimientos.html">Volver</a>
+                                <a class="btn btn-trans" href="sp2_01_00_tarjeta_de_credito_movimientos_facturados_despliegue.html">Ver</a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+    </form> 
+      
+
+
+      <!-- fin tabla hover -->
+      <div class="tabla-footer">
+
+      </div>
+
+    </div>
+    </section>
+
+    </div>
+  </div>
+  
+<!-- @include _footer -->

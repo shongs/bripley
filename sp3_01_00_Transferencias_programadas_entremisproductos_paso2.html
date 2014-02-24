@@ -1,0 +1,154 @@
+<!-- @include _header -->
+
+  <div class="row">
+     
+    <div class="column3 pad-tb menuLateral">
+      <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+      <h2>Transferencias</h2> 
+  <nav class="menu-contextual">
+         <ul class="nav nav-tabs">
+          <li><a href="sp3_01_00_Transferencias_entre_mis_productos.html">Entre mis Productos</a></li>
+          <li><a href="sp3_01_00_Transferencias_a_terceros_transferir.html">A Terceros</a></li>
+          <li class="active"><a href="sp3_01_00_Transferencias_programadas.html">Programadas</a></li>
+          <li><a href"#">Cartola</a></li>
+         <!--  <li><a href="sp3_01_00_Transferencias_aportes.html">Aportes</a></li> -->
+        </ul> 
+        <div class="selectMenu selectBox">
+            <div class="box">Seleccion de Servicio o Seccion</div>
+        </div>
+    </nav>
+    
+    <div class="column12 last pad-all fullWidth contenedor">
+
+ 
+      <div class="flujo">
+        <div class="paso-flujo">
+
+              <span class="num-dark-flujo">
+                  <span class="round-flujo">1</span>
+              </span>
+              <p>Datos Agendamiento</p>
+
+        </div>
+        <div class="paso-flujo paso-flujo-active">
+              <span class="num-dark-flujo-active">
+                  <span class="round-flujo">2</span>
+              </span>
+              <p>Datos Transferencia</p>          
+        </div>
+        <div class="paso-flujo">
+              <span class="num-dark-flujo">
+                  <span class="round-flujo">3</span>
+              </span>
+              <p>Confirmaci&oacute;n Agendamiento</p>
+        </div>
+
+      </div>   
+
+
+          
+      <form>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">1</span>
+                    </span>
+                    <p>Seleccione Cuenta de Origen</p>
+                </div>
+                <div class="column12">
+
+                    <table class="table t-medium table-responsive">
+                        <thead>
+                            <tr>
+                                <th width="3%">
+                                </th>
+                                <th>
+                                    Cuenta(s)
+                                </th>
+                                <th class="text-right">
+                                    Deuda Utilizada($)
+                                </th>
+                                <th class="text-right">
+                                    Saldo Disponible($)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr class="opcion-tabla">
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Cuenta(s)</b>Cuenta Corriente 0-000-00-00000-00</td>
+                            <td class="text-right"><b class="labelTable">Deuda Utilizada($)</b>---</td>
+                            <td class="text-right"><b class="labelTable">Saldo Línea de Credito($)</b>9.999.999</td>
+                        </tr>
+                        <tr class="opcion-tabla">
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Cuenta(s)</b>Cuenta Corriente 0-000-00-00000-00</td>
+                            <td class="text-right"><b class="labelTable">Deuda Utilizada($)</b>---</td>
+                            <td class="text-right"><b class="labelTable">Saldo Línea de Credito($)</b>9.999.999</td>
+                        </tr>
+                        <tr class="opcion-tabla">
+                            <td> <input type="radio" name="cuenta"></td>
+                            <td><b class="labelTable">Cuenta(s)</b>Linea de Credito 0-000-00-00000-00</td>
+                            <td class="text-right"><b class="labelTable">Deuda Utilizada($)</b>184.000</td>
+                            <td class="text-right"><b class="labelTable">Saldo Línea de Credito($)</b>9.999.999</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">2</span>
+                    </span>
+                    <p>Seleccione Cuenta de Destino</p>
+                </div>
+                <div class="column12 fullWidth">
+                    <table class="table t-medium">
+                        <tr>
+                            <td width="3%"></td>
+                            <td width="25%"><label>Cuentas</label></td>
+                            <td>
+                                <div class="selectBox ">
+                                    <div class="box">-----</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>Cuenta Vista 0-000-00-00000-00</option>
+                                        <option>Cuenta Vista 0-000-00-00000-00</option>
+                                        <option>Cuenta Vista 0-000-00-00000-00</option>
+                                        <option>Cuenta Vista 0-000-00-00000-00</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">3</span>
+                    </span>
+                    <p>Monto de la Transferencia</p>
+                </div>
+                <div class="column12 fullWidth">
+                    <table class="table t-medium">
+                        <tr>
+                            <td width="3%"></td>
+                            <td width="25%"><label>Ingrese Monto($):</label></td>
+                            <td>
+                                <div class="input-group">
+                                    <input class="form-control" type="text"/>
+                                </div>
+                            </td>
+                        </tr>
+                           
+                    </table>
+                    <div class="f-right">
+                        <a class="btn btn-en" href="sp3_01_00_Transferencias_programadas.html">Cancelar</a>
+                        <a class="btn btn-trans" href="sp3_01_00_Transferencias_programadas_entremisproductos_paso3.html">Aceptar</a>
+                    </div>
+                </div>
+            </form>
+      
+      
+    </section>
+
+    </div>
+  </div>
+  
+<!-- @include _footer -->

@@ -1,0 +1,147 @@
+<!-- @include _header -->
+
+  <div class="row">
+     
+    <div class="column3 pad-tb menuLateral">
+      <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+      <h2>Pago de Cuentas</h2> 
+  <nav class="menu-contextual">
+        <ul class="nav nav-tabs">
+          <li><a href="sp3_01_00_pagodecuentas_pac.html">PAC</a></li>
+          <li class="active"><a href="sp3_01_00_pagodecuentas_pat.html">PAT</a></li>
+          <li><a href="#">Otros Pagos</a></li>
+        </ul> 
+        <div class="selectMenu selectBox">
+            <div class="box">Seleccion de Servicio o Seccion</div>
+        </div>
+    </nav>
+    
+    <div class="column12 last pad-all fullWidth contenedor">
+              
+      <div class="column12">
+                   <div class="paso t-normal sin-numero">
+                    
+                    <p>Tarjeta Ripley</p>
+                </div>
+                    <table class="table t-medium table-responsive">
+                        <tr>
+                           <td></b><label>Número 5999-2341-XXXX</label></td>
+
+                        </tr>
+                    </table>
+        </div>
+
+<table class="table tabla-detalle-cliente">
+                   <div class="paso t-normal sin-numero">
+                    
+                    <p>Seleccione Servicio</p>
+                </div>
+      <table class="table table-responsive t-medium margin-tb">
+        <thead>
+          <tr>
+            <td class="text-left">                                
+              <div class="selectBox ">
+                                    <div class="box">Servicio</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>Luz</option>
+                                        <option>Agua</option>
+                                        <option>Internet</option>
+                                    </select>
+                                </div></td>
+            <td class="text-left">                                
+              <div class="selectBox ">
+                                    <div class="box">Empresa</div>
+                                    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                                        <option>Aguas Andina</option>
+                                        <option>Aguas Araucania</option>   
+                                        <option>Aguas Cordillera</option>                                    
+                                    </select>
+                                </div></td>
+
+          </tr>
+          
+        </thead>
+
+      </table>
+
+      <table class="table table-responsive t-medium margin-tb">
+        <thead>
+          <tr>
+            <th class="text-left">Nº Identificador</th>
+            <th class="text-left">Monto Tope ($)</th>            
+            <th class="text-left">Descripci&oacute;n</th>
+            <th class="text-left">Mail</th>
+
+          </tr>
+          
+        </thead>
+          <tr>
+            <td class="text-left">                               
+              <div class="input-group">
+                                    <input class="form-control" type="text"/>
+                                </div></td>
+            <td class="text-left">                               
+              <div class="input-group">
+                                    <input class="form-control" type="text"/>
+                                </div></td>
+            <td class="text-left">                               
+              <div class="input-group">
+                                    <input class="form-control" type="text"/>
+                                </div></td>
+            <td class="text-left">                               
+              <div class="input-group">
+                                    <input class="form-control" type="text"/>
+                                </div></td>
+          </tr>
+
+      </table>
+                   <div class="paso t-normal sin-numero">
+                    
+                    <p>Confirme suscripci&oacute;n</p>
+                </div>
+                <div class="column12">
+                    <table class="table t-medium table-responsive">
+                        <tr>
+                            <td width="50%">Aseg&uacute;rese que el n&uacute;mero de seria de su Tarjeta Ripley es 15934393. Si es as&iacute;, ingrese el valor de las siguientes coordenadas</td>
+                            <td>
+                            <td>
+                              <div class="cords">
+                                      <label>
+                                        A3
+                                      <input class="form-control" type="password" maxlength="2"/>
+                                    </label>
+                                    <label>
+                                        B4
+                                       <input class="form-control" type="password" maxlength="2"/>
+                                     </label>
+                                     <label>
+                                      D1
+                                       <input class="form-control" type="password" maxlength="2"/
+                                      </label>
+                                    </div>
+                            </td>
+                        </tr>    
+                    </table>
+
+                </div>
+      <div class="f-right">
+        <a class="btn btn-en" href="sp3_01_00_PagodeCuentas.html">Cancelar</a>
+        <a class="btn btn-se" href="sp3_01_00_pagodecuentas_pat.html">Volver</a>
+        <a class="btn btn-trans" href="sp3_01_00_pagodecuentas_pat_exito.html">Aceptar</a>
+      </div> 
+
+
+<!-- fin tabla hover -->
+      <div class="tabla-footer">
+
+      </div>
+
+    </div>
+    </section>
+
+    </div>
+  </div>
+  
+<!-- @include _footer -->

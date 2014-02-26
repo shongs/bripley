@@ -185,6 +185,56 @@
                 </div>
             </div>
         </div>
+        
+        <!-- modal modificar Transferencia Programada -->
+        <div class="modal fade bs-modal-lg modificar" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-lg">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Modificar Transferencia Programada</h4>
+                    </div>
+                    <div class="modal-body" style="max-height:300px;">
+                     
+                                   <p class="color-p text-center">¿Esta seguro que desea modificar Transferencia Programada?</p>
+                   
+                    </div>
+                    <div class="modal-footer">
+
+                     <div class="f-right">
+                        <button type="button" class="btn btn-en" data-dismiss="modal">Cancelar</button>
+                        <a class="btn btn-trans" href="sp3_01_00_Transferencias_programadas_modificar.html">Aceptar</a>
+                    </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal eliminar Transferencia Programada -->
+        <div class="modal fade bs-modal-lg eliminar" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-lg">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Eliminar Transferencia Programada</h4>
+                    </div>
+                    <div class="modal-body" style="max-height:300px;">
+                     
+                                   <p class="color-p text-center">¿Esta seguro que desea eliminar Transferencia Programada?</p>
+                   
+                    </div>
+                    <div class="modal-footer">
+
+                     <div class="f-right">
+                        <button type="button" class="btn btn-en" data-dismiss="modal">Cancelar</button>
+                        <a class="btn btn-trans" href="sp3_01_00_Transferencias_programadas_confirmareliminar.html">Aceptar</a>
+                    </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row-offcanvas row-offcanvas-left">
             <header id="corporativo" class="main-head">
                 <nav id="menu-corporativo" class="navbar menu-ripley" role="navigation">
@@ -213,8 +263,8 @@
                         <p class="t-small">Último acceso 02/08/2013 a 12:50:06</p>
                         <ul class="accesos-cuenta">
                             <li><a href="#"><i class="x-small ico-puntos"></i>Ripley Puntos: 2.543</a></li>
-                            <li><a href="#"><i class="x-small ico-perfil"></i>Mi perfil</a></li>
-                            <li><a href="#"><i class="x-small ico-close"></i>Cerrar Sesion </a></li>
+                            <li><a href="sp3_01_00_mi_perfil.html"><i class="x-small ico-perfil"></i>Mi perfil</a></li>
+                            <li><a href="home.html"><i class="x-small ico-close"></i>Cerrar Sesion </a></li>
                         </ul>
                     </section>
                     <nav class="menu-aux">
@@ -253,13 +303,14 @@
             <li><a rel="" title="Tarjetas de Credito" href="sp2_01_00_tarjeta_de_credito.html"><i class="icon-medium ico-tarjeta"></i>Tarjetas de Crédito</a></li>
             <li><a rel="" title="Transferencias" href="sp3_01_00_Transferencias.html"><i class="icon-medium ico-trans"></i>Transferencias</a></li>
             <li><a rel="" title="Créditos" href="sp3_01_00_creditos.html"><i class="icon-medium ico-creditos"></i>Créditos</a></li>
-            <li><a rel="" title="Seguros" href="#"><i class="icon-medium ico-seguros"></i>Seguros</a></li>		
+            <li><a rel="" title="Seguros" href="sp3_01_00_seguros.html"><i class="icon-medium ico-seguros"></i>Seguros</a></li>		
             <li><a rel="" title="Inversiones" href="#"><i class="icon-medium ico-inversiones"></i>Inversiones</a></li>
+            <li><a rel="" title="Tarjetas de Credito" href="sp3_01_00_tarjeta_ripley.html"><i class="icon-medium ico-tarjeta"></i>Tarjeta Ripley</a></li>
         </ul>
         <ul class="ripleyServ">	
             <li><a href=""><i class="icon-medium ico-serv"></i>Servicios</a>
                 <ul class="submenu">
-                    <li><a rel="" title="Pago de Cuentas" href="#">Pago de Cuentas</a></li>
+                    <li><a rel="" title="Pago de Cuentas" href="sp3_01_00_PagodeCuentas.html">Pago de Cuentas</a></li>
                     <li><a rel="" title="Recarga de Celulares" href="sp3_01_00_Recargas.html">Recarga de Celulares</a></li>
                     <li><a rel="" title="Ripley Puntos" href="#">Ripley Puntos</a></li>
                 </ul>
@@ -291,79 +342,201 @@
     
     <div class="column12 last pad-all fullWidth contenedor">
       
-      <div class="banner-top margen-b" style="float: left; width: 100%; background-color:#666; height: 90px;"></div>
+      <div class="banner-top margen-b" style="float: left; width: 100%; background-color:#666; height: 90px; color: #fff; font-size: 20px; text-align: center; padding: 2%;">Banner</div>
 
       <div class="seguro-detalle">
         <div class="icon-seguro-s"><img src="assets/img/seguro-hogar.png"></div>
-        <div class="tit-seguro">Hogar <span class="textomorado">Protegido</span></div>
+        <div class="tit-seguro">Seguro<span class="color-p"> Familia Protegida</span></div>
         <div class="seguro-precio">Desde <span class="fontsize20">$7.400</span> mensuales</div>
       </div>
 
-      <div class="">
-        <h3 class="textomorado">Asistencia Domiciliaria en Plomer&iacute;a, Electricidad, Cerrajer&iacute;a y Cristaler&iacute;a</h3>
+      <div class="seguros-infogeneral margen-b">
+        <table class="table">
+          <tr><td> <h3 class="color-p">¿En que consiste el seguro “Seguro Familia Protegida” clientes Banco Ripley?</h3></td></tr>
+          <tr><td><p> Es un seguro exclusivo para clientes Banco Ripley. Su objetivo es reembolsar el 100% de los gastos médicos farmacéuticos y hospitalarios producidos a consecuencia de un Accidente, luego de deducir la bonificación que le otorgue el sistema previsional de salud que posea el Asegurado (Isapre o Fonasa). Como beneficio adicional, cuenta con un servicio de Orientación Médica Telefónica las 24 horas del día.</p></td></tr>
+          <tr><td><div class="f-right">
+          <a class="btn btn-trans" href="sp3_01_00_seguros_paso3.html">Solicitar aqu&iacute;</a>
+      </div></td></tr>
+        </table>
+       
 
-        <ul>
-          <li>Cubre los bienes de tu hogar contra incendio, sismo y robo</li>
-          <li>Repone los bienes dañados o robados por el valor de un nuevo bien</li>
-          <li>Planes con y sin robo</li>
-          <li>Sin inspecci&oacute;n</li>
-          <li>Cobertura inmediate</li>
-          <li>Capitales hasta UF 1.000 para Incendio/Sismo. Y UF 100 para robo</li>
-        </ul>
+
+         
       </div>
 
- <section class="tcredito-info">
+ <section class="tcredito-info margen-b">
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#.html">¿Qu&eacute; Cubre?</a></li>
-            <li><a href="#">¿Qu&eacute; no cubre?</a></li>
-            <li><a href="#">Beneficios Adicionales</a></li>
-            <li><a href="#">¿Qu&eacute; hacer en caso de siniestro?</a></li>
+            <li class="active"><a href="#.html">Caracter&iacute;sticas</a></li>
+            <li><a href="#">Requisitos</a></li>
+            <li><a href="#">Tarifas</a></li>
+            <li><a href="#">Exclusiones</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
         </ul> 
         <article class="contenedor tcredito-tabs">
           <ul>
-<li><span class="textomorado">Incendio, riesgos de la naturaleza y las acciones de terceros:</span>Cobertura al contenido ante la pérdida o daños físicos causados por un incendio o por un fenómeno de la naturaleza o por daños causados por terceras personas.</li>
+<li><span class="color-p">Descripci&oacute;n de las coberturas</span>
+ 
 
-<li><span class="textomorado">Robo y Asalto:</span>
+                        <table class="table tabla-resumen margen-b">
+                            <thead>
+                                <tr>
+                                    <th class="text-left" width="25%">Plan</th>
+                                    <th class="text-left" width="25%">Cobertura</th>
+                                    <th class="text-left" width="25%">Capital m&aacute;ximo asegurado</th>
+                                    <th class="text-left" width="25%">Eventos al a&ntilde;o</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td class="text-left">Familiar: Cubre al asegurado,  cónyuge o equivalente y 3 Hijos.</td>
+                                <td class="text-left">Reembolso por Gastos Médicos por Accidente. Asistencia Telefónica</td>
+                                <td class="text-left">30 UF Anuales</td>
+                                <td class="text-left">3 eventos al año por grupo Familiar.</td>
+                            </tr>   
+                        </table>
+Se reembolsará a cada asegurado el 100% de los gastos, luego de deducir cualquier beneficio o reembolso otorgado por Isapre o Fonasa, con un tope de 10 UF por evento y con un máximo de 3 eventos al año. El capital máximo es de 30 UF en el año por grupo familiar, esto es, Titular, cónyuge o equivalente y 3 hijos (hijos del Asegurado titular). En caso de no existir sistema previsional de salud (Isapre o Fonasa), el seguro reembolsara el 50% del gasto real efectuado con los mismos topes. Esta cobertura no tiene deducible.
+  </li>
 
-Se indemnizará por las pérdidas o daños físicos que sufra el Asegurado, producto de la desaparición de los objetos asegurados a consecuencia de robo con fractura o con violencia en las personas cometido dentro de la vivienda. Se incluye dentro de esta cobertura, los daños materiales a consecuencia de robo, su intento o ambos, causado a los objetos asegurados, por actos de terceras personas, con un tope de 10% sobre el monto asegurado por robo. Quedarán además cubiertos los artículos que se encuentre en lugares cerrados dentro de la propiedad (bodegas, garajes, galpones, etc. Tienen como máximo 2 eventos al año.</li>
+<li><span class="color-p">¿Qué es la orientación Médica Telefónica? </span>
 
-<li><span class="textomorado">Remoción de Escombros:</span>
+MEDIPHONE 24 HORAS FONO: 600-367-2736 (costo llamada local) (02)433-4744 (desde celulares) Mediphone es un servicio telefónico que ofrece orientación médica las 24 horas del día sin esperas, destinado a proporcionar soporte médico y técnico en tiempo real para todas las consultas relacionadas con la salud. Por ejemplo, reacciones adversas a medicamentos - efectos secundarios - contraindicaciones - Orientación materno infantil - Evolución de tratamientos - conexión con servicios de urgencia y/o ambulancia - conexión con profesionales de la salud.- etc.</li>
 
-Se cubre las acciones de remoción de escombros y las acciones de demolición ordenadas por autoridad competente, todas ellas con un sublímite del 3% del monto asegurado para la cobertura de Incendio y Riesgos Asociados.</li>
+<li><span class="color-p">¿Cuáles son los Beneficios de este Seguro? </span>
 
-<li><span class="textomorado">Deducibles:</span>
+  <ul>
+    <li>Fácil e inmediata suscripción</li>
+    <li>Cubre el 100% de los copagos</li>
+    <li>Es un complemento del sistema de salud.</li>
+    <li>Reembolsa el 50% de los gastos en caso de no tener previsión de salud.</li>
+    <li>Cubre asistencia medica, farmacéutica y hospitalaria</li>
+    <li>Renovación automática del seguro</li>
+    <li>Cobertura en moneda reajustable</li>
+    <li>Sin deducible</li>
+    <li>Dinero de libre disposición</li>
+    <li>Pago automático de la prima con cargo al estado de cuenta de Tarjeta de crédito Ripley, créditos de consumo, Línea Gira. (VER BANCO MEDIOS DE PGO)</li>
+    <li>Cobertura las 24 horas y  los 365 días del año</li>
+    <li>Asistencia y orientación telefónica las 24 horas del día a través de Mediphone</li>
+ </ul>
+</li>
 
-En caso de Sismo: Para Planes E y F: UF 5 y Planes G y H: UF 10.</li>
+<li><span class="color-p">Prima del seguro</span>
 
-<li><span class="textomorado">Para Robo y Asalto:</span>
+El Valor del Seguro será de 2,4716 UF(*) equivalente a $49.000 ($4.083 mensuales). Este valor se cancelará como prima única y anticipada, incluida en el crédito de consumo o vía pago en efectivo
+
+(*) Valor Fijo UF 19,825.08 equivalente al dia 01 de abril de 2010, según consta en las condiciones particulares de la póliza.</li>
+
+<li><span class="color-p">Para Robo y Asalto:</span>
 
 5% del monto asegurado con mínimo de UF 2.</li>
 
-<li><span class="textomorado">Medidas de seguridad exigidas para la cobertura de robo:</span>
-<ul>
-<li>La existencia de las medidas al momento del siniestro será comprobada por el liquidador cuando se deba inspeccionar la propiedad producto del siniestro.</li>
+<li><span class="color-p">¿Quiénes pueden optar a este seguro?</span>
+Todos los Clientes de Banco Ripley, con una edad máxima de ingreso de 80 años, 364 días y con una edad máxima de permanencia de 83 años con 364 días. Para este plan, podrán ser asegurados, la persona que solicita el seguro en calidad de titular y también sus dependientes, considerándose como tal, su cónyuge o equivalente y un máximo de 3 hijos (hijos del titular del seguro). Los hijos deben ser menores de 18 años y tener hasta 24 años, siempre que estén estudiando, sean solteros y económicamente dependientes. 
+</li>
+<li> <span class="color-p">¿Cuál es la vigencia del seguro?</span>
+  <ul>
+    <li>Inicio: a partir de la fecha de la firma de la solicitud de incorporación</li>
+    <li>Término: 12 meses contados desde la fecha de inicio</li>
+  </ul>
+</li>
 
-    Casas (debe tener a lo menos una de las siguientes medidas):
-        <li>· Chapas de seguridad en todas las puertas de acceso y rejas en todas las ventanas, claraboyas, tragaluces, etc. del primer piso</li>
-        <li>· Condominio cerrado con cuidado.</li>
-        <li>· Alarma.</li>
+<li><span class="color-p">¿Cu&aacute;les son las principales exclusiones?</span>
+      <table class="table">
+        <tr>
+          <td>Guerra, invasi&oacute;n, hostilidades b&eacute;licas.</td>
+          <td>Enfermedades de tipo mental o nerviosa</td>
+        </tr>
+        <tr class="text-left" >
+          <td>Suicidio o su intento.</td>
+          <td>Atenciones Domiciliarias</td>
+        </tr>
+        <tr class="text-left" >
+          <td>Lesiones causadas bajo los efectos del alcohol y/o drogas.</td>
+          <td>Exámenes médicos de rutina, cirugía plástica o cosmética</td>
+        </tr>
+        <tr class="text-left" >
+          <td>Participac&oacute;n del asegurado en actos clasificados como delito.</td>
+          <td>Lesión por ingesta voluntaria de somníferos barbitúricos o drogas</td>
+        </tr>
+        <tr class="text-left" >
+          <td>Aparatos auditivmos, &oacute;pticos o aparatos artificiales.</td>
+          <td>Atenciones de enfermería fuera del recinto hospitalario</td>
+        </tr>
+        <tr class="text-left" >
+          <td>Gastos por acompa&ntilde;antes mientras el asegurado esta hospitalizado.</td>
+          <td></td>
+        </tr>
+     </table>
+</li>
+<li><span class="color-p">¿Qué debe hacer en caso de Siniestro?</span>
+En Banco Ripley, lo esperamos hasta 90 días después de ocurrido el siniestro. Para hacer uso de los beneficios, deberá acudir a cualquier sucursal del Banco y completar el Formulario de Denuncio de Siniestros, presentando los siguientes antecedentes:
 
-    Departamento 1er piso:
-        <li>· Chapas de seguridad en todas las puertas de acceso y rejas en todas las ventanas.</li>
+</li> 
+<li><span class="color-p">Plan Familiar</span><br />
+1. Formulario Denuncia de Siniestro firmado por el asegurado<br />
+2. Fotocopia Cédula de Identidad del titular y del asegurado familiar.<br />
+3. Fotocopia de Libreta de Familia o certificado de nacimiento de los hijos.<br />
+4. Los originales de boletas, recibos, facturas, copia de bonos, ordenes de atención, etc., que acrediten el gasto y su cancelación.<br />
+5. La declaración del asegurado si el gasto fue cubierto por otra institución<br />
+</li>
 
-    Departamento 2do piso en adelante:
-        <li>· Chapa de seguridad efectiva en la puerta de acceso.</li>
-</ul>
-<li><span class="textomorado">Límites Especiales Indemnizables:</span>
-Para la cobertura de robo, los televisores y computadores portátiles serán indemnizados con un tope de UF 20 por cada artículo robado en un mismo evento. En caso de robo de joyas, bisutería y objetos valiosos, la indemnización máxima será de UF 20 para el conjunto de este tipo de artículos en un mismo evento. Para los efectos de la aplicación de los limites indemnizatorios señalados, se entenderá por objetos valiosos aquellos bienes cuyo valor excede el de los materiales que los componen y que en general, son objetos muebles que tienen especial valor artístico, científico o histórico.</li>
-
-   *Nota: Sólo se aseguran casas de uso habitacional.
+<li><span class="color-p">Prima intermediada por Banripley Corredora de Seguros Ltda. Durante período 2012
+</span>
+<table class="table">
+  <thead>
+    <th colspan="4">% Prima Intermedia</th>
+  </thead>
+    <tr>
+      <td>Compa&ntilde;ia</td>
+      <td>Seg. Grales</td>
+      <td>Compa&ntilde;ia de Seguros</td>
+      <td>Seg. Vida</td>
+    </tr>
+    <tr>
+      <td>BNP Paribes Cardif Seguros Generales S.A.</td>
+      <td>59%</td>
+      <td>BNP Paribas Cardif Seguros de Vida S.A.</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Cía. Aseguradora Magallanes S.A.</td>
+      <td>41%</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>    
+</table>
+</li>
+<li><span class="color-p">Pólizas de Garantía y Responsabilidad Civil del Corredor </span>
+  <table class="table">
+    <thead>
+      <th>Nombre de la compa&ntilde;&iacute;a de seguros emisora de la p&oacute;liza</th>
+      <th>N&uacute;mero</th>
+    </thead>
+    <tr>
+      <td>Garantía : Compañía Aseguradora Magallanes S.A.</td>
+      <td>01 56 045 122</td>
+    </tr>
+    <tr>
+      <td>Resp.Civil : Compañía Aseguradora Magallanes S.A.</td>
+      <td>01 45 069 610</td>
+    </tr>
+  </table>
+</li>
+<li><span class="color-p">¿Dudas y consultas?</span><br />
+Ante cualquier consulta, llámenos al servicio de atención al Cliente:<br />
+Banripley Corredora de Seguros Ltda.<br />
+800-20-32-20 y desde celulares 694-1690.<br />
+Mail: g-scseguros@ripley.cl <br />
+</li>
 
 </ul>
         </article>
 
       </section>
+      <div class="f-right">
+                <a class="btn btn-se" href="sp3_01_00_seguros.html">Volver</a>
+                <a class="btn btn-trans" href="sp3_01_00_seguros_paso3.html">Solicitar</a>
+          </div>
 </div>
+
     </section>
 
     </div>

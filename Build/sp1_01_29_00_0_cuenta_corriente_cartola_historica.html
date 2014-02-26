@@ -185,6 +185,56 @@
                 </div>
             </div>
         </div>
+        
+        <!-- modal modificar Transferencia Programada -->
+        <div class="modal fade bs-modal-lg modificar" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-lg">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Modificar Transferencia Programada</h4>
+                    </div>
+                    <div class="modal-body" style="max-height:300px;">
+                     
+                                   <p class="color-p text-center">¿Esta seguro que desea modificar Transferencia Programada?</p>
+                   
+                    </div>
+                    <div class="modal-footer">
+
+                     <div class="f-right">
+                        <button type="button" class="btn btn-en" data-dismiss="modal">Cancelar</button>
+                        <a class="btn btn-trans" href="sp3_01_00_Transferencias_programadas_modificar.html">Aceptar</a>
+                    </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal eliminar Transferencia Programada -->
+        <div class="modal fade bs-modal-lg eliminar" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-lg">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Eliminar Transferencia Programada</h4>
+                    </div>
+                    <div class="modal-body" style="max-height:300px;">
+                     
+                                   <p class="color-p text-center">¿Esta seguro que desea eliminar Transferencia Programada?</p>
+                   
+                    </div>
+                    <div class="modal-footer">
+
+                     <div class="f-right">
+                        <button type="button" class="btn btn-en" data-dismiss="modal">Cancelar</button>
+                        <a class="btn btn-trans" href="sp3_01_00_Transferencias_programadas_confirmareliminar.html">Aceptar</a>
+                    </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row-offcanvas row-offcanvas-left">
             <header id="corporativo" class="main-head">
                 <nav id="menu-corporativo" class="navbar menu-ripley" role="navigation">
@@ -213,8 +263,8 @@
                         <p class="t-small">Último acceso 02/08/2013 a 12:50:06</p>
                         <ul class="accesos-cuenta">
                             <li><a href="#"><i class="x-small ico-puntos"></i>Ripley Puntos: 2.543</a></li>
-                            <li><a href="#"><i class="x-small ico-perfil"></i>Mi perfil</a></li>
-                            <li><a href="#"><i class="x-small ico-close"></i>Cerrar Sesion </a></li>
+                            <li><a href="sp3_01_00_mi_perfil.html"><i class="x-small ico-perfil"></i>Mi perfil</a></li>
+                            <li><a href="home.html"><i class="x-small ico-close"></i>Cerrar Sesion </a></li>
                         </ul>
                     </section>
                     <nav class="menu-aux">
@@ -253,13 +303,14 @@
             <li><a rel="" title="Tarjetas de Credito" href="sp2_01_00_tarjeta_de_credito.html"><i class="icon-medium ico-tarjeta"></i>Tarjetas de Crédito</a></li>
             <li><a rel="" title="Transferencias" href="sp3_01_00_Transferencias.html"><i class="icon-medium ico-trans"></i>Transferencias</a></li>
             <li><a rel="" title="Créditos" href="sp3_01_00_creditos.html"><i class="icon-medium ico-creditos"></i>Créditos</a></li>
-            <li><a rel="" title="Seguros" href="#"><i class="icon-medium ico-seguros"></i>Seguros</a></li>		
+            <li><a rel="" title="Seguros" href="sp3_01_00_seguros.html"><i class="icon-medium ico-seguros"></i>Seguros</a></li>		
             <li><a rel="" title="Inversiones" href="#"><i class="icon-medium ico-inversiones"></i>Inversiones</a></li>
+            <li><a rel="" title="Tarjetas de Credito" href="sp3_01_00_tarjeta_ripley.html"><i class="icon-medium ico-tarjeta"></i>Tarjeta Ripley</a></li>
         </ul>
         <ul class="ripleyServ">	
             <li><a href=""><i class="icon-medium ico-serv"></i>Servicios</a>
                 <ul class="submenu">
-                    <li><a rel="" title="Pago de Cuentas" href="#">Pago de Cuentas</a></li>
+                    <li><a rel="" title="Pago de Cuentas" href="sp3_01_00_PagodeCuentas.html">Pago de Cuentas</a></li>
                     <li><a rel="" title="Recarga de Celulares" href="sp3_01_00_Recargas.html">Recarga de Celulares</a></li>
                     <li><a rel="" title="Ripley Puntos" href="#">Ripley Puntos</a></li>
                 </ul>
@@ -334,17 +385,34 @@
                     <p>Seleccione cuenta</p>
                 </div>
                     <table class="table t-medium table-responsive">
-                        <tr>
-                            <td><input type="radio" name="cuenta"><b class="labelTable">Cuenta(s)</b><label>Cuenta Corriente 0-000-00-00000-00</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="radio" name="cuenta"><b class="labelTable">Cuenta(s)</b><label>Cuenta Corriente 0-000-00-00000-00</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="radio" name="cuenta"><b class="labelTable">Cuenta(s)</b><label>Cuenta Corriente 0-000-00-00000-00</label></td>
-                        </tr>
-                        
-                    </table>
+                    <tr class="opcion-tabla">
+                        <td width="2%">
+                            <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"/> 
+                        </td>
+                        <td>
+                            <b class="labelTable">Cuenta(s)</b>
+                            <label>Cuenta Corriente 0-000-00-00000-00</label>
+                        </td>
+                    </tr>
+                    <tr class="opcion-tabla">
+                        <td>
+                            <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"/> 
+                        </td>
+                        <td>
+                            <b class="labelTable">Cuenta(s)</b>
+                            <label>Cuenta Corriente 0-000-00-00000-00</label>
+                        </td>
+                    </tr>
+                    <tr class="opcion-tabla">
+                        <td>
+                            <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"/> 
+                        </td>
+                        <td>
+                            <b class="labelTable">Cuenta(s)</b>
+                            <label>Cuenta Corriente 0-000-00-00000-00</label>
+                        </td>
+                    </tr>
+                </table>
                 </div>
                 <div class="paso t-normal">
                     <span class="num-dark">
@@ -355,8 +423,8 @@
                 <div class="column12 fullWidth">
                     <table class="table t-medium table-responsive">
                         <tr>
-                            <td width="3%"></td>
-                            <td><input type="radio" name="tramo-fecha"><label>Mes / Año</label>
+                            <td width="3%"><input type="radio" data-dojo-type="dijit/form/RadioButton" name="tramo-fech"/></td>
+                            <td><label>Mes / Año</label>
                             </td>
                             <td>
                               <label>Mes</label>
@@ -399,8 +467,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td width="3%"></td>
-                            <td><input type="radio" name="tramo-fecha"><b class="labelTable">Cuenta(s)</b><label>Consulta entre fechas</label></td>
+                            <td width="3%"><input type="radio" data-dojo-type="dijit/form/RadioButton" name="tramo-fech"/></td>
+                            <td><b class="labelTable">Cuenta(s)</b><label>Consulta entre fechas</label></td>
                             <td>
                                 Desde
                             </td>
@@ -420,7 +488,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="f-right">
+                <div class="f-right buttons-accion">
                   <a class="btn btn-en" href="sp1_01_29_00_cuenta_corriente.html">Cancelar</a>
                   <a class="btn btn-trans" href="sp1_01_29_00_0_cuenta_corriente_cartola_historica_despliegue.html">Aceptar</a>   
                 </div> 

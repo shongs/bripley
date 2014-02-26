@@ -1,0 +1,87 @@
+<section id='slider-home' class='swipe'>
+  <div class='swipe-wrap'>
+    <div class="swipe_slide">
+    	<img src="assets/img/slide.png"/>
+    </div>
+    <div class="swipe_slide">
+    	<img src="assets/img/slide.png"/>
+    </div>
+    <div class="swipe_slide">
+    	<img src="assets/img/slide.png"/>
+    </div>
+    <div class="swipe_slide">
+    	<img src="assets/img/slide.png"/>
+    </div>
+ 
+  </div>
+  <ul id="position" class="bullets">
+	</ul>
+
+	<div class="loginPublic">
+		<h3>Banca en Línea</h3>
+		<form>
+			<div class="loginForm">
+				<div class="form-field">
+					<label>Rut</label>
+					<div class="form-group mid">
+						<input class="form-control"/>
+					</div>
+					<div class="form-group subijoRut">
+						<input class="form-control"/>
+					</div>
+
+				</div>
+				<div class="form-field">
+					<label>Clave</label>
+					<div class="form-group">
+						<input class="form-control"/>
+					</div>
+					<div class="recuperarclave"  style="font-size:11px; float:right; text-align:right; margin-bottom: 10px;">
+						¿Necesita ayuda con su Clave &Uacute;nica?<br />
+						Solicitar Clave &Uacute;nica
+					</div>
+				</div>
+				<a href="index.html"> <input type="post" class="btn btn-trans" value="Ingresar" style="float: right; margin-bottom: 10px;"></a>
+			</div>
+
+		</form>
+	</div>
+</section>
+	
+
+        <script>
+
+$( document ).ready(function() {
+				var cant_item = $(document).find('.swipe_slide').length;
+				for (var i=1; i<=cant_item;i++) {
+					if (i==1) {
+						var claseActiva = 'class="active"'
+					}
+					else{
+						var claseActiva = ''
+					}
+					
+					$('#position').append('<li '+ claseActiva +'>'+i+'</li>');
+					
+				}
+				
+			});
+			
+			//var bullets = document.getElementById('position').getElementsByTagName('li');
+			var elem = document.getElementById('slider-home');
+			window.mySwipe = Swipe(elem,
+					{
+						// startSlide: 4,
+						   auto: 5000,
+						   speed: 600,
+						// continuous: true,
+						// disableScroll: true,
+						// stopPropagation: true,
+						// callback: function(index, element) {},
+						transitionEnd: function(index, element) {
+							$('#position li').removeClass('active');
+							$('#position li').eq(index).addClass('active');
+						}
+					});
+
+</script>

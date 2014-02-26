@@ -32,9 +32,6 @@
 .pad-left {
   padding: 0 0 0 20px;
 }
-.no-padding {
-  padding: 0 !important;
-}
 .input-group {
   min-width: 200px;
   width: 100%;
@@ -278,6 +275,9 @@ Smartphones ********************************************************************
   }
   .tabla-detalle-transaccion tr {
     display: block;
+  }
+  .buttons-accion {
+    width: 100%;
   }
 }
 /*******************************************************************************

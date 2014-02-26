@@ -1,0 +1,180 @@
+<!-- @include _header -->
+
+  <div class="row">
+     
+    <div class="column3 pad-tb menuLateral">
+      <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+      <h2>Tarjeta Ripley</h2>
+  <nav class="menu-contextual">
+            <ul class="nav nav-tabs">
+              <li><a href="sp3_01_00_tarjeta_de_credito_estadodecuenta.html">Estado de Cuenta</a></li>
+              <li><a href="#">Comprar</a></li>
+              <li><a href="sp3_01_00_tarjeta_de_credito_pagosycuentas_pagodeudanacional.html">Pagar Tarjeta</a></li>
+              <li class="active"><a href="sp3_01_00_tarjeta_de_credito_pagosycuentas_avances.html">Avances</a></li>
+              <li><a href="sp3_01_00_tarjeta_de_credito_tarjetaadicional.html">Pagar Cuentas</a></li>
+              <li><a href="sp3_01_00_tripley_Recargas.html">Recargar</a></li>
+            </ul> 
+        <div class="selectMenu selectBox">
+            <div class="box">Seleccion de Servicio o Seccion</div>
+        </div>
+    </nav>
+    
+    <div class="column12 last pad-all fullWidth contenedor">
+
+     
+    <form>
+                <div class="paso t-normal sin-numero">
+                   <p>Tarjeta Ripley</p>
+                </div>
+                <div class="column12">
+<table class="table t-medium table-responsive">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Número de Tarjeta
+                                </th>
+                               
+                                <th class="text-right">Saldo Disponible para Avance ($)</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>5999-234-XXXX</td>
+                            <td class="text-right"><b class="labelTable">Disponible Avance</b>134.345</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="paso t-normal">
+                    <span class="num-dark">
+                        <span class="round">1</span>
+                    </span>
+                    <p>Indique monto del avance</p>
+                </div>
+                <div class="column12 fullWidth">
+                    <table class="table t-medium">
+                        <tr>
+                            <td width="3%"></td>
+                            <td width="25%"><label>Ingrese Monto ($):</label></td>
+                            <td>
+                                <div class="input-group">
+                                    <input class="form-control" type="text"/>
+                                </div>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td width="3%"></td>
+                            <td width="25%"><label>Número de cuotas:</label></td>
+                            <td>
+           <div class="box"> 
+          <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML=this.options[this.selectedIndex].text">
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+          </select>
+          </div>
+                            </td>
+                        </tr> 
+                    </table>   
+
+    <div class="column12 margin-tb">
+      <div class="paso t-normal">
+          <span class="num-dark">
+            <span class="round">2</span>
+          </span>
+          <p>Cuenta Destino</p>
+        </div>
+      <table class="table t-medium">
+        <tr>
+          <td width="3%"></td>
+          <td width="25%"><label>Banco</label></td>
+          <td width="30%">
+          <div class="selectBox ">
+           <div class="box">-----</div> 
+          <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML=this.options[this.selectedIndex].text">
+            <option>Banco Ripley</option>
+            <option>Banco Ripley</option>
+            <option>Banco Ripley</option>
+            <option>Banco Ripley</option>
+          </select>
+          </div>
+          </td>
+          <td width="35%">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label>Tipo de Cuenta</label></td>
+          <td>
+          <div class="selectBox ">
+          <div class="box">-----</div>
+          <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML=this.options[this.selectedIndex].text">
+            <option>Cuenta Vista</option>
+            <option>Cuenta Corriente</option>
+            <option>Cuenta de Ahorro</option>
+          </select>
+          </div>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+           
+          </td>
+          <td>
+             <label>RUT del destinatario:</label>
+          </td>
+          <td colspan="3">
+              <div class="input-group">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+           
+          </td>
+          <td>
+             <label>Número de cuenta:</label>
+          </td>
+          <td colspan="3">
+              <div class="input-group">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </td>
+        </tr>
+                                     <tr>
+                                <td colspan="4" class="text-right">
+                                    <a class="btn btn-en" href="sp3_01_00_tarjeta_de_credito_pagosycuentas.html">Cancelar</a>
+                                    <a class="btn btn-trans" href="sp3_01_00_tarjeta_de_credito_pagosycuentas_avances_paso2.html">Aceptar</a>
+                                </td>
+                            </tr>
+      </table>
+    </div>
+
+
+
+
+              
+
+                
+      
+    </form> 
+<!-- fin tabla hover -->
+      <div class="tabla-footer">
+
+      </div>
+
+    </div>
+    </section>
+
+    </div>
+  </div>
+  
+<!-- @include _footer -->

@@ -1,0 +1,254 @@
+/*COLORES*/
+/*============== MIXING ==============*/
+/*============= Margenes ==================*/
+.margin-tb {
+  margin: 10px 0;
+}
+.margen-left {
+  margin-left: 10px;
+}
+.margen-left2 {
+  margin-left: 20px;
+}
+.margen-right {
+  margin-right: 10px;
+}
+.margen-right2 {
+  margin-right: 20px;
+}
+.margen-b {
+  margin-bottom: 20px;
+}
+/*============= PADDING ================*/
+.pad-all {
+  padding: 20px;
+}
+.pad-sides {
+  padding: 0 20px;
+}
+.pad-tb {
+  padding: 20px 0;
+}
+.pad-left {
+  padding: 0 0 0 20px;
+}
+* {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+/*HEADER HOME*/
+.menu-home {
+  width: 100%;
+  background: #333333;
+  padding: 10px 0 10px 40px;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+.menu-home ul {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.menu-home li {
+  float: left;
+  margin-right: 7%;
+}
+.menu-home a {
+  color: #fff;
+}
+.menu-home li.home a {
+  display: block;
+  height: 20px;
+  overflow: hidden;
+  width: 20px;
+}
+/*SLIDER*/
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float: left;
+  position: relative;
+}
+.swipe_slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.bullets {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  margin: 0;
+}
+.bullets li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  text-align: center;
+  color: #fff;
+}
+.bullets .active {
+  background: #662869;
+}
+/*ACCESOS DIRECTOS*/
+.servicios_accesos {
+  margin: 10px 0;
+}
+.servicios_accesos li {
+  background: #662869;
+}
+.servicios_accesos li:first-child {
+  background: #CC0066;
+}
+.servicios_accesos li:last-child {
+  background: #999999;
+}
+.servicios_accesos a {
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+}
+/*SERVICIOS*/
+.form_consulta {
+  background: #f7f7f7;
+  border-left: 5px solid #662869;
+  padding: 10px;
+  text-align: center;
+}
+.form_consulta h3,
+.form_consulta p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.form_consulta h3 {
+  margin-bottom: 20px;
+}
+.form_consulta p {
+  color: #555;
+}
+.form_consulta .form-field label {
+  float: left;
+  width: 30%;
+}
+.form_consulta .input-group {
+  width: 70%;
+}
+.btn {
+  border: none;
+}
+#productos_home article {
+  padding: 0 10px 10px;
+}
+.home_titulo {
+  margin-left: -10px;
+  border-left: 4px solid #662869;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #662869;
+}
+.content_producto {
+  float: left;
+  width: 60%;
+}
+.content_producto p {
+  margin: 20px 0;
+  font-size: 14px;
+}
+.conIcono {
+  overflow: hidden;
+  padding-left: 120px;
+  position: relative;
+  min-height: 150px;
+}
+.conIcono h4 {
+  background: #f7f7f7;
+  color: #662869;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: -20px;
+  padding: 2px 0 2px 20px;
+}
+.conIcono > p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.icon-info {
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  min-height: 100px;
+  background: #662869;
+}
+.icon-info img {
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  width: 100%;
+}
+#productos_home {
+  margin-bottom: 20px;
+}
+#info_home {
+  margin-bottom: 40px;
+}
+.icon-info > h3 {
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 4px;
+  position: relative;
+  text-align: center;
+  z-index: 999;
+}
+.loginPublic {
+  background: none repeat scroll 0 0 #DFE6E7;
+  border: 1px solid #FFFFFF;
+  left: 1%;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  width: 260px;
+  z-index: 9999;
+}
+.loginForm {
+  padding: 10px;
+}
+.loginPublic > h3 {
+  background: #662869;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.loginForm label {
+  float: left;
+  width: 20%;
+}
+.form-group.mid {
+  min-width: 0;
+  width: 60%;
+}
+.form-group.subijoRut {
+  margin-left: 2px !important;
+  width: 15%;
+}
+.form-group.mid {
+  min-width: 0;
+  width: 60%;
+}
+.loginForm .form-group {
+  float: left;
+}

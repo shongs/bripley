@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/grid.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/components.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/header.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/icons.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/adapt.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/claro/claro.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/solicitartarjeta.css" />
+          <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/home.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/dojo.css" />
+        
+          <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.9.2/dojo/dojo.js"
+            data-dojo-config="async: true"></script>
+        <script src="assets/js/function-dojo.js"></script>
+
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/collapse.js"></script>
+        <script src="assets/js/transition.js"></script>
+        <script src="assets/js/swipe.js"></script>
+        <script src="assets/js/script.js"></script>
+ 
+
+        <link rel="stylesheet" href="assets/style/css/table.css">
+
+        <!--[if lt IE 9]>
+                <script src="assets/js/html5shiv.js"></script>
+        <![endif]-->
+        <title> Banco Ripley</title>
+    </head>
+    <body>
+        <div class="row-offcanvas row-offcanvas-left">
+            <header id="corporativo" class="main-head">
+                <nav id="menu-corporativo" class="navbar menu-ripley" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navTop">
+            <img src="assets/img/arrow_menu.png"/>
+        </button>
+        <div class="navbar-brand">BANCO RIPLEY</div>
+    </div>
+    <div class="collapse navbar-collapse" id="navTop">
+        <ul class="nav">
+            <li><a href="#" title="enlace a Tienda" rel="">Tienda</a></li>
+            <li><a href="#" title="enlace a Tarjeta Ripley" rel="">Tarjeta Ripley</a></li>
+            <li><a href="#" title="enlace a Ripley Puntos" rel="">Ripley Puntos</a></li>
+            <li><a class="active" href="#" title="enlace a Banco Ripley" rel="">Banco Ripley</a></li>
+            <li><a href="#" title="enlace a Seguros" rel="">Seguros</a></li>
+            <li><a href="#" title="enlace a Ventas corporativas" rel="">Ventas Corporativas</a></li>
+        </ul>
+    </div>
+</nav>
+
+                <div class="row">
+                    <a class="logo" href="index.html" title="ir a Banco Ripley" rel="index"><img alt="Logo Banco Ripley" src="assets/img/logo.png"/></a>
+                   
+                </div>
+                 <nav class="menu-home">
+    <ul>
+        <li class="home"><a href="#"><i class="x-small"></i>Home</a></li>
+        <li><a href="#">Nuestros Productos</a></li>
+        <li><a href="#">Simuladores</a></li>
+        <li><a href="#">Nuestro Banco </a></li>
+        <li><a href="#">Contáctanos</a></li>
+    </ul>
+</nav>
+            </header>
+<section id='slider-home' class='swipe'>
+  <div class='swipe-wrap'>
+    <div class="swipe_slide">
+    	<img src="assets/img/slide.png"/>
+    </div>
+    <div class="swipe_slide">
+    	<img src="assets/img/slide.png"/>
+    </div>
+    <div class="swipe_slide">
+    	<img src="assets/img/slide.png"/>
+    </div>
+    <div class="swipe_slide">
+    	<img src="assets/img/slide.png"/>
+    </div>
+ 
+  </div>
+  <ul id="position" class="bullets">
+	</ul>
+
+	<div class="loginPublic">
+		<h3>Banca en Línea</h3>
+		<form>
+			<div class="loginForm">
+				<div class="form-field">
+					<label>Rut</label>
+					<div class="form-group mid">
+						<input class="form-control"/>
+					</div>
+					<div class="form-group subijoRut">
+						<input class="form-control"/>
+					</div>
+
+				</div>
+				<div class="form-field">
+					<label>Clave</label>
+					<div class="form-group">
+						<input class="form-control"/>
+					</div>
+					<div class="recuperarclave"  style="font-size:11px; float:right; text-align:right; margin-bottom: 10px;">
+						¿Necesita ayuda con su Clave &Uacute;nica?<br />
+						Solicitar Clave &Uacute;nica
+					</div>
+				</div>
+				<a href="index.html"> <input type="post" class="btn btn-trans" value="Ingresar" style="float: right; margin-bottom: 10px;"></a>
+			</div>
+
+		</form>
+	</div>
+</section>
+	
+
+        <script>
+
+$( document ).ready(function() {
+				var cant_item = $(document).find('.swipe_slide').length;
+				for (var i=1; i<=cant_item;i++) {
+					if (i==1) {
+						var claseActiva = 'class="active"'
+					}
+					else{
+						var claseActiva = ''
+					}
+					
+					$('#position').append('<li '+ claseActiva +'>'+i+'</li>');
+					
+				}
+				
+			});
+			
+			//var bullets = document.getElementById('position').getElementsByTagName('li');
+			var elem = document.getElementById('slider-home');
+			window.mySwipe = Swipe(elem,
+					{
+						// startSlide: 4,
+						   auto: 5000,
+						   speed: 600,
+						// continuous: true,
+						// disableScroll: true,
+						// stopPropagation: true,
+						// callback: function(index, element) {},
+						transitionEnd: function(index, element) {
+							$('#position li').removeClass('active');
+							$('#position li').eq(index).addClass('active');
+						}
+					});
+
+</script>
+<nav id="accesos_directos" class="servicios_accesos">
+	<ul class="row">
+		<li class="column4">
+			<a href="#">Haste Cliente Aquí</a>
+		</li>
+		<li class="column4"><a href="#">Usa Tus Tarjetas</a></li>
+		<li class="column4 last"><a href="#">Beneficios</a></li>
+	</ul>
+
+</nav>
+<section id="productos_home" class="row">
+	<article class="column4 form_consulta">
+		<h3 class="color-p">
+			¡Consulta Aquí!
+		</h3>
+		<p>Puedes tener una oferta pre-aprobado</p>
+		<form>
+			<div class="form-field">
+			<label>RUT</label>
+				<div class="input-group">
+					<input class="form-control"/>
+				</div>
+			</div>
+			<input type="submit" class="btn btn-trans" value="Consultar"/>
+		</form>
+	</article>
+	<article class="column4 dap_home"> 
+		<h3 class="home_titulo">Depósitos a Plazo</h3>
+		<div class="content_producto">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat turpis, vestibulum scelerisque.
+		</p>
+		<a class="btn btn-trans">
+			Ver más
+		</a>
+		</div>
+	</article>
+	<article class="column4 last card_home"> 
+		
+		<h3 class="home_titulo">Tarjeta Banco Ripley</h3>
+		<div class="content_producto">	
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat turpis, vestibulum scelerisque.
+		</p>
+		<a class="btn btn-trans">
+			Ver más
+		</a>
+	</div>
+	</article>
+</section>
+<section id="info_home" class="row hide-on-phones">
+	<article class="column4 conIcono">
+		<span class="icon-info">
+			<h3>Escuela Ripley</h3>
+			<img src="assets/img/escuela.png" />
+		</span>
+		<h4>Integración</h4>
+		<p>Aprende más acerca de tu Tarjeta Ripley y Banco Ripley</p>
+		<h4>Tarjeta de Crédito MasterCard</h4>
+		<p>Conoce los usos y beneficios de tu
+tarjeta de crédito</p>
+	</article>
+	<article class="column4 conIcono">
+		<span class="icon-info">
+			<h3>Banca Transparente</h3>
+			<img src="assets/img/trans.png" />
+		</span>
+		<p>Ut commodo est vitae mauris fermentum, quis tristique mauris sodales. Vivamus vestibulum libero nibh, vitae posuere sem mattis a.</p>
+		<ul>
+			<li><a class="color-p" href="#">SERNAC</a></li>
+			<li><a class="color-p" href="#">SBIF</a></li>
+			<li><a class="color-p" href="#">Uso del Portal</a></li>
+		</ul>
+	</article>
+</section>
+
+
+
+
+
+<footer id="main-footer">
+	<div class="info-footer row">
+		<div class="column4">
+			<div class="info-telefonos">
+				<div class="img-telefono"><img src="assets/img/telefono.png"/></div>
+				<div class="telefono">Banca Tel&eacute;fonica<div class="numero-telefono">800 20 32</div></div>
+				<div class="telefono">Desde Celulares<div class="numero-telefono">(02) 2 694 41 690</div></div>
+			</div>	
+		</div>
+		<div class="column4">
+			<div class="info-corporativa">
+				<p>Informaci&oacute;n Corporativa</p>
+					<ul>
+						<li><a href="#">Pizarra de Tasas</a></li>
+						<li><a href="#">Tarifas y Gastos</a></li>
+						<li><a href="#">Defensoria del Cliente Bancario</a></li>
+						<li><a href="#">Gu&iacute;a para el Cliente Bancario</a></li>
+						<li><a href="#">C&oacute;digo de Buena Conducto y Buenas Pr&aacute;cticas de Bancos e Instituciones Financieras</a></li>
+					</ul>
+			</div>		
+		</div>
+		<div class="column4 last">
+			<div class="info-logo">
+				<img src="assets/img/bripley-logofooter.png">
+			</div>	
+		</div>
+	</div>
+	<div class="legal">
+		<p>Inf&oacute;rmese  sobre la garant&iacute;a estatal de los dep&oacute;sitos en su banco o en <a href="#">sbif.cl</a> BancoRipley.cl  Copyright 2002-2003 - Todos los derechos reservados. </p>
+	</div>
+
+</footer>
+
+</body>
+
+</html>

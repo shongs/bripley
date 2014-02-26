@@ -1,0 +1,223 @@
+<!-- @include _header -->
+
+  <div class="row">
+     
+    <div class="column3 pad-tb menuLateral">
+      <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+      <h2>Seguros</h2> 
+  <nav class="menu-contextual">
+        <ul class="nav nav-tabs">
+          <li><a href="#">Consultar Seguros</a></li>
+          <li class="active"><a href="#">Solicitar Seguro</a></li>
+        </ul> 
+        <div class="selectMenu selectBox">
+            <div class="box">Seleccion de Servicio o Seccion</div>
+        </div>
+    </nav>
+    
+    <div class="column12 last pad-all fullWidth contenedor">
+    <div class="paso t-normal sin-numero">
+      <p>Seleccione plan de acuerto al Capital que desaa asegurar</p>
+    </div> 
+    <table class="table t-medium table-responsive">
+      <thead>
+        <th>Coberturas</th>
+        <th class="textomorado text-center">Incendio, riesgos de naturaleza y acciones de terceros</th>
+        <th class="textomorado text-center">Sismo</th>
+        <th class="textomorado text-center">Robo y Asalto</th>
+      </thead>
+      <tr class="opcion-tabla">
+        <td><input type="radio" name="cuenta"><b class="labelTable"></b><label>Plan E</label></td>
+        <td class="text-center"><b class="labelTable">Incendio, riesgos de naturaleza y acciones de terceros</b>UF 500</td>
+        <td class="text-center"><b class="labelTable">Sismo</b>UF 500</td>
+        <td class="text-center"><b class="labelTable">Robo y Asalt</b>UF 1000</td>
+      </tr>
+      <tr class="opcion-tabla">
+        <td><input type="radio" name="cuenta"><b class="labelTable"></b><label>Plan F</label></td>
+        <td class="text-center"><b class="labelTable">Incendio, riesgos de naturaleza y acciones de terceros</b>UF 500</td>
+        <td class="text-center"><b class="labelTable">Sismo</b>UF 500</td>
+        <td class="text-center"><b class="labelTable">Robo y Asalt</b>UF 1000</td>
+      </tr>
+      <tr class="opcion-tabla">
+        <td><input type="radio" name="cuenta"><b class="labelTable"></b><label>Plan G</label></td>
+        <td class="text-center"><b class="labelTable">Incendio, riesgos de naturaleza y acciones de terceros</b>---</td>
+        <td class="text-center"><b class="labelTable">Sismo</b>UF 500</td>
+        <td class="text-center"><b class="labelTable">Robo y Asalt</b>---</td>
+      </tr>
+      <tr class="opcion-tabla">
+        <td><input type="radio" name="cuenta"><b class="labelTable"></b><label>Plan H</label></td>
+        <td class="text-center"><b class="labelTable">Incendio, riesgos de naturaleza y acciones de terceros</b>UF 500</td>
+        <td class="text-center"><b class="labelTable">Sismo</b>UF 500</td>
+        <td class="text-center"><b class="labelTable">Robo y Asalt</b>UF 1000</td>
+      </tr>
+    </table>
+    <div class="paso t-normal sin-numero">
+      <p>Datos contratante (Pagador)</p>
+    </div>     
+    <div class="formCampo">
+       <form>
+    <table class="table">                             
+      <tr>
+        <td>Nombre</td>
+        <td>Augusto Roberto Bastidas Collao</td>
+      </tr>
+      <tr>
+        <td>Rut</td>
+        <td>7.362.762.7</td>
+      </tr>
+      <tr>
+        <td><label>Fecha de nacimiento</label></td>
+        <td><div class="fecha_full">
+          <div class="selectBox ">
+              <div class="box">Dia</div>
+              <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                  <option>--</option>
+                  <option>--</option>
+                  <option>--</option>
+                  <option>--</option>
+              </select>
+          </div>
+          <div class="selectBox ">
+              <div class="box">Mes</div>
+              <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                  <option>Enero</option>
+                  <option>Febrero</option>
+                  <option>Marzo</option>
+                  <option>Abril</option>
+                  <option>Mayo</option>
+                  <option>Junio</option>
+                  <option>Julio</option>
+                  <option>Agosto</option>
+                  <option>Septiembre</option>
+                  <option>Octubre</option>
+                  <option>Noviembre</option>
+                  <option>Diciembre</option>
+              </select>
+          </div>
+          <div class="selectBox ">
+              <div class="box">Año</div>
+              <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                  <option>1999</option>
+                  <option>1999</option>
+                  <option>1999</option>
+                  <option>1999</option>
+              </select>
+          </div>
+
+      </div> </td>
+      </tr>
+      <tr>
+        <td><label>Direcci&oacute;n</label></td>
+        <td>  <div class="input-group">
+          <input class="form-control" type="text"/>
+        </div></td>
+      </tr>
+      <tr>
+        <td><label>Comuna</label></td>
+        <td>  <div class="input-group">
+          <input class="form-control" type="text"/>
+        </div></td>
+      </tr>
+      <tr>
+        <td><label>Ciudad</label></td>
+        <td>  <div class="input-group">
+          <input class="form-control" type="text"/>
+        </div></td>
+      </tr>      
+    </table>
+    <div class="paso t-normal sin-numero">
+      <p>¿Para qui&eacute;n estas contratando este seguro?</p>
+    </div> 
+    <table class="table">
+      <tr>
+        <td width="3%"><input type="radio" name="cuenta"><b class="labelTable"></b><label></label></td>
+        <td>Para mi</td>
+      </tr>      
+      <tr>
+        <td width="3%"><input type="radio" name="cuenta"><b class="labelTable"></b><label></label></td>
+        <td>Otra Persona</td>
+      </tr>
+    </table>
+    <div class="paso t-normal sin-numero">
+      <p>Forma de Pago</p>
+    </div> 
+    <table class="table">
+      <tr>
+        <td width="3%"><input type="radio" name="cuenta"><b class="labelTable"></b><label></label></td>
+        <td>Cuenta Corriente  0-000-003030-0</td>
+      </tr>      
+      <tr>
+        <td width="3%"><input type="radio" name="cuenta"><b class="labelTable"></b><label></label></td>
+        <td>Cuenta Vista 0-024-022041-3</td>
+      </tr>
+       <tr>
+        <td width="3%"><input type="radio" name="cuenta"><b class="labelTable"></b><label></label></td>
+        <td>Tarjeta de Cr&eacute;dito 2341-XXXX</td>
+      </tr>
+        <tr>
+          <td colspan="2">La prima del seguro se cargar&aacute; los d&iacute;s 6 de cada mes en tu cuenta o tarjeta de cr&eacute;dito seleccionada</td> 
+        </tr>       
+      </table>
+      <table class="table">
+        <tr>
+          <td class="color-p" width="80%">Mandato de Pago Hogar Protegido</td>
+          <td>Ver</td>
+          <td>Descargar</td>
+        </tr>
+      </table>
+
+
+
+    <div class="paso t-normal sin-numero">
+      <p>Confirme solicitud de Seguro</p>
+    </div>                              
+      <table class="table t-medium table-responsive">
+          <tr>
+              <td width="80%">
+                Asegúrese que el número de seria de su Tarjeta Ripley es 15934393. Si es así, ingrese el valor de las siguientes coordenadas</td>
+
+              <td>
+                <div class="cords">
+                        <label>
+                          A3
+                        <input class="form-control" type="password" maxlength="2"/>
+                      </label>
+                      <label>
+                          B4
+                         <input class="form-control" type="password" maxlength="2"/>
+                       </label>
+                       <label>
+                        D1
+                         <input class="form-control" type="password" maxlength="2"/
+                        </label>
+                </div>
+              </td>
+          </tr>    
+      </table>
+      </form>              
+      <div class="f-right">
+                <a class="btn btn-en" href="sp3_01_00_seguros.html">Cancelar</a>
+                <a class="btn btn-se" href="sp3_01_00_seguros_paso2.html">Volver</a>
+                <a class="btn btn-trans" href="sp3_01_00_seguros_exito.html">Solicitar</a>
+          </div>
+
+                            
+             
+                  </div>
+ 
+    </div>
+
+
+
+    
+
+ 
+</div>
+    </section>
+
+    </div>
+  </div>
+  
+<!-- @include _footer -->

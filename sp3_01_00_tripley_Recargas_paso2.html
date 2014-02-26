@@ -1,0 +1,157 @@
+<!-- @include _header -->
+
+  <div class="row">
+     
+    <div class="column3 pad-tb menuLateral">
+      <!-- @include _menu-lateral -->
+    </div>
+    <section id="contenido-central" class="column9 last fullWidth pad-tb">
+      <h2>Recargas</h2> 
+      <nav class="menu-contextual">
+            <ul class="nav nav-tabs">
+              <li><a href="sp3_01_00_tarjeta_de_credito_estadodecuenta.html">Estado de Cuenta</a></li>
+              <li><a href="#">Comprar</a></li>
+              <li><a href="sp3_01_00_tarjeta_de_credito_pagosycuentas_pagodeudanacional.html">Pagar Tarjeta</a></li>
+              <li><a href="sp3_01_00_tarjeta_de_credito_pagosycuentas_avances.html">Avances</a></li>
+              <li><a href="sp3_01_00_tarjeta_de_credito_tarjetaadicional.html">Pagar Cuentas</a></li>
+              <li class="active"><a href="sp3_01_00_tripley_Recargas.html">Recargar</a></li>
+            </ul> 
+            <div class="selectMenu selectBox">
+                <div class="box">Seleccion de Servicio o Seccion</div>
+            </div>
+        </nav>  
+    
+    <div class="column12 last pad-all fullWidth contenedor">
+       
+      <div class="flujo">
+        <div class="paso-flujo paso-flujo-active">
+
+              <span class="num-dark-flujo-active">
+                  <span class="round-flujo">1</span>
+              </span>
+              <p>Complete Datos</p>
+
+        </div>
+        <div class="paso-flujo">
+              <span class="num-dark-flujo">
+                  <span class="round-flujo">2</span>
+              </span>
+              <p>Confirmar Recarga</p>          
+        </div>
+        <div class="paso-flujo">
+              <span class="num-dark-flujo">
+                  <span class="round-flujo">3</span>
+              </span>
+              <p>Comprobante de Recarga</p>
+        </div>
+
+      </div>   
+
+      <form>
+
+<div class="column12 margin-tb">
+  <span class="compania entel"></span> <p>Recarga de móvil prepago y cuenta controlada Entel PCS</p> 
+        <div class="paso sin-numero">
+                 
+          <p>Complete los siguientes datos:</p>
+        </div>
+      
+    </div>
+
+  
+
+    <div class="column12 margin-tb">
+    
+      <table id="recarga_cel" class="table t-medium">
+        <tr>
+          <td width="3%"></td>
+          <td width="25%"><label>Nº del Celular</label></td>
+          <td width="30%">
+            <div class="cel_numb">
+                  <select class="prefijo_cel" name="select1" data-dojo-type="dijit/form/Select">
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                  </select>
+                    <div class="input-group">
+                    <input class="form-control" type="text">
+                  </div>
+                </div>
+          </td>
+          <td></td>
+         
+        </tr>
+        <tr>
+          <td></td>
+          <td><label>Confirme Nº del Celular</label></td>
+          <td width="30%">
+                <div class="cel_numb">
+                  <select class="prefijo_cel" name="select1" data-dojo-type="dijit/form/Select">
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                  </select>
+                    <div class="input-group">
+                    <input class="form-control" type="text">
+                  </div>
+                </div>
+          </td>
+          <td>
+            
+          </td>
+        </tr>
+        <tr>
+          <td>
+           
+          </td>
+          <td>
+             <label>Seleccione monto de la recarga</label>
+          </td>
+         <td width="30%">
+            <select class="prefijo_cel" width="50%" name="select1" data-dojo-type="dijit/form/Select">
+                 <option value="05">1.000</option>
+                    <option value="06">2.000</option>
+                    <option value="07">3.500</option>
+                    <option value="08">5.000</option>
+                    <option value="09">10.000</option>
+            </select>
+            
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+           
+          </td>
+          <td>
+             <label>Ingrese E-mail</label>
+          </td>
+          <td>
+              <div class="input-group">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
+       <div class="f-right">
+            <a class="btn btn-en" href="sp3_01_00_tripley_Recargas.html">Cancelar</a>
+            <a class="btn btn-trans" href="sp3_01_00_tripley_Recargas_paso3.html">Aceptar</a>
+        </div>
+    </div>
+  </form>
+      
+      
+  </section>
+
+    </div>
+  </div>
+  
+<!-- @include _footer -->

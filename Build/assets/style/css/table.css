@@ -32,9 +32,6 @@
 .pad-left {
   padding: 0 0 0 20px;
 }
-.no-padding {
-  padding: 0 !important;
-}
 .ui-loader {
   display: none;
 }
@@ -109,7 +106,7 @@
 .tabla-detalle-cliente thead tr th {
   background: none repeat scroll 0 0 #662869;
   color: #FFFFFF;
-  text-align: right;
+  text-align: center;
 }
 .table-inside {
   border: 0 none;
@@ -283,7 +280,6 @@
     overflow: hidden;
   }
   .opcion-tabla > td:first-child {
-    border-right: 1px solid #DDDDDD;
     display: block;
     height: 100%;
     left: 0;
@@ -294,9 +290,6 @@
     display: block;
     float: left;
     width: 57%;
-  }
-  .table-responsive tbody > tr {
-    border-bottom: 2px solid #662869;
   }
   .detalle-credito td {
     clear: none !important;
@@ -310,6 +303,9 @@
   }
   .detalle-credito tr {
     border-bottom: none !important;
+  }
+  #saldos-consolidados .table-responsive.tabla-detalle-transaccion thead {
+    display: none;
   }
 }
 @media (min-width: 648px) {

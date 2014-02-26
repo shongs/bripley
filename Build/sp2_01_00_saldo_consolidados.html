@@ -185,6 +185,56 @@
                 </div>
             </div>
         </div>
+        
+        <!-- modal modificar Transferencia Programada -->
+        <div class="modal fade bs-modal-lg modificar" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-lg">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Modificar Transferencia Programada</h4>
+                    </div>
+                    <div class="modal-body" style="max-height:300px;">
+                     
+                                   <p class="color-p text-center">¿Esta seguro que desea modificar Transferencia Programada?</p>
+                   
+                    </div>
+                    <div class="modal-footer">
+
+                     <div class="f-right">
+                        <button type="button" class="btn btn-en" data-dismiss="modal">Cancelar</button>
+                        <a class="btn btn-trans" href="sp3_01_00_Transferencias_programadas_modificar.html">Aceptar</a>
+                    </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal eliminar Transferencia Programada -->
+        <div class="modal fade bs-modal-lg eliminar" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-lg">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Eliminar Transferencia Programada</h4>
+                    </div>
+                    <div class="modal-body" style="max-height:300px;">
+                     
+                                   <p class="color-p text-center">¿Esta seguro que desea eliminar Transferencia Programada?</p>
+                   
+                    </div>
+                    <div class="modal-footer">
+
+                     <div class="f-right">
+                        <button type="button" class="btn btn-en" data-dismiss="modal">Cancelar</button>
+                        <a class="btn btn-trans" href="sp3_01_00_Transferencias_programadas_confirmareliminar.html">Aceptar</a>
+                    </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row-offcanvas row-offcanvas-left">
             <header id="corporativo" class="main-head">
                 <nav id="menu-corporativo" class="navbar menu-ripley" role="navigation">
@@ -213,8 +263,8 @@
                         <p class="t-small">Último acceso 02/08/2013 a 12:50:06</p>
                         <ul class="accesos-cuenta">
                             <li><a href="#"><i class="x-small ico-puntos"></i>Ripley Puntos: 2.543</a></li>
-                            <li><a href="#"><i class="x-small ico-perfil"></i>Mi perfil</a></li>
-                            <li><a href="#"><i class="x-small ico-close"></i>Cerrar Sesion </a></li>
+                            <li><a href="sp3_01_00_mi_perfil.html"><i class="x-small ico-perfil"></i>Mi perfil</a></li>
+                            <li><a href="home.html"><i class="x-small ico-close"></i>Cerrar Sesion </a></li>
                         </ul>
                     </section>
                     <nav class="menu-aux">
@@ -252,13 +302,14 @@
             <li><a rel="" title="Tarjetas de Credito" href="sp2_01_00_tarjeta_de_credito.html"><i class="icon-medium ico-tarjeta"></i>Tarjetas de Crédito</a></li>
             <li><a rel="" title="Transferencias" href="sp3_01_00_Transferencias.html"><i class="icon-medium ico-trans"></i>Transferencias</a></li>
             <li><a rel="" title="Créditos" href="sp3_01_00_creditos.html"><i class="icon-medium ico-creditos"></i>Créditos</a></li>
-            <li><a rel="" title="Seguros" href="#"><i class="icon-medium ico-seguros"></i>Seguros</a></li>		
+            <li><a rel="" title="Seguros" href="sp3_01_00_seguros.html"><i class="icon-medium ico-seguros"></i>Seguros</a></li>		
             <li><a rel="" title="Inversiones" href="#"><i class="icon-medium ico-inversiones"></i>Inversiones</a></li>
+            <li><a rel="" title="Tarjetas de Credito" href="sp3_01_00_tarjeta_ripley.html"><i class="icon-medium ico-tarjeta"></i>Tarjeta Ripley</a></li>
         </ul>
         <ul class="ripleyServ">	
             <li><a href=""><i class="icon-medium ico-serv"></i>Servicios</a>
                 <ul class="submenu">
-                    <li><a rel="" title="Pago de Cuentas" href="#">Pago de Cuentas</a></li>
+                    <li><a rel="" title="Pago de Cuentas" href="sp3_01_00_PagodeCuentas.html">Pago de Cuentas</a></li>
                     <li><a rel="" title="Recarga de Celulares" href="sp3_01_00_Recargas.html">Recarga de Celulares</a></li>
                     <li><a rel="" title="Ripley Puntos" href="#">Ripley Puntos</a></li>
                 </ul>
@@ -278,10 +329,10 @@
     </div><!--//column3 pad-tb menuLateral-->
     <section id="contenido-central" class="column9 last fullWidth pad-tb">
         <h2>Saldos Consolidados</h2>
-        <div class="column12 last pad-all fullWidth contenedor">
-            <table class="table tabla-detalle-cliente border-right">
+        <div id="saldos-consolidados" class="column12 last pad-all fullWidth contenedor">
+            <table class="table tabla-detalle-cliente">
                 <thead>
-                    <th class="fullWidth">AUGUSTO ROBERTO BASTIDAS COLLAO</th>
+                    <th class="fullWidth border-right">AUGUSTO ROBERTO BASTIDAS COLLAO</th>
                   
                 </thead>
             </table>
@@ -323,7 +374,7 @@
                     </td>
                 </tr>
             </table><!--//table table-responsive tabla-resumen-->
-            <div class="f-right margen-b">
+            <div class="f-right margen-b buttons-accion">
                 <a class="btn btn-en" href="sp3_01_00_Transferencias_entre_mis_productos.html">Transferir</a>
                 <a class="btn btn-trans" href="sp3_01_00_Recargas.html">Recargar</a>
             </div><!--//f-right-->
@@ -362,7 +413,7 @@
                     </td>
                 </tr>
             </table><!--//table table-responsive tabla-resumen-->
-            <div class="f-right margen-b">
+            <div class="f-right margen-b buttons-accion">
                 <a class="btn btn-en" href="sp1_01_29_02_0__lineadecredito_avances_paso1.html">Avance</a>
                 <a class="btn btn-trans" href="sp1_01_29_02_0__lineadecredito_pagos_paso1.html">Pagar</a>
             </div><!--//f-right-->
@@ -407,7 +458,7 @@
                     </td>
                 </tr>
             </table><!--//table table-responsive tabla-resumen-->
-            <div class="f-right margen-b">
+            <div class="f-right margen-b buttons-accion">
                 <a class="btn btn-en" href="sp2_01_00_tarjeta_de_credito_pagosycuentas_avances.html">Avance</a>
                 <a class="btn btn-trans" href="sp2_01_00_tarjeta_de_credito_pagosycuentas_pagodeudanacional.html">Pagar</a>
             </div>
@@ -444,13 +495,13 @@
                     </td>
                 </tr>
             </table><!--//table table-responsive tabla-resumen-->
-            <div class="f-right margen-b">
-                <a class="btn btn-en" href="#">Simular Credito</a>
-                <a class="btn btn-trans" href="#">Pagar</a>
+            <div class="f-right margen-b buttons-accion">
+                <a class="btn btn-en" href="sp3_01_00_simular_credito.html">Simular Credito</a>
+                <a class="btn btn-trans" href="sp3_01_00_creditos_consumo_pago.html">Pagar</a>
             </div><!--//f-right-->
 
             <!--//f-right-->
-            <div class="column12 text-center">
+            <div class="column12 text-center buttons-accion">
 <!--centrar btn--><a class="btn btn-se" href="javascript:window.print()">Imprimir</a>
             </div>    
         </div><!--//column12 last pad-all fullWidth contenedor-->
